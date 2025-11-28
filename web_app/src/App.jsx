@@ -9,7 +9,8 @@ import './components/RealWorldMonitor.css';
 // Initialize Gemini API
 // NOTE: In a production app, never hardcode keys on the client.
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-const genAI = new GoogleGenerativeAI(API_KEY);
+console.log("API Key present:", !!API_KEY); // Debug: Check if key is loaded
+const genAI = new GoogleGenerativeAI(API_KEY || ""); // Prevent crash on empty key
 const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
 function App() {
