@@ -5,9 +5,24 @@ const RealWorldMonitor = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        // In a real app, this would fetch from an API. 
-        // Here we import the JSON directly, but we might need to handle empty/loading states if we were fetching.
-        setData(realWorldData);
+        // Sort data by severity: High > Medium > Low > Safe
+        const severityOrder = {
+            'high': 4,
+            'medium': 3,
+            'low': 2,
+            'safe': 1,
+            'unknown': 0
+        };
+
+        const sortedData = [...realWorldData]
+            .filter(item => item.severity?.toLowerCase() !== 'unknown') // Filter out unknown severity
+            .sort((a, b) => {
+                const sevA = severityOrder[a.severity?.toLowerCase()] || 0;
+                const sevB = severityOrder[b.severity?.toLowerCase()] || 0;
+                return sevB - sevA; // Descending order
+            });
+
+        setData(sortedData);
     }, []);
 
     if (!data || data.length === 0) {
