@@ -3,10 +3,13 @@ import json
 import time
 from parallel import Parallel
 import google.generativeai as genai
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # API Keys
-PARALLEL_API_KEY = "Hon7rLk0I2Gc56SvYnszXN5OW710jxb0kXujnmKt"
-GEMINI_API_KEY = "AIzaSyDbP7ZYEreKdUCUjW1Jbk4fCrJgBmyUwSY"
+PARALLEL_API_KEY = os.getenv("PARALLEL_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Configure Gemini
 genai.configure(api_key=GEMINI_API_KEY)
@@ -73,7 +76,7 @@ def main():
             try:
                 # Using the beta search method with correct arguments.
                 # Aiming for 500 total items across 25 queries (5 cats * 5 templates) -> 20 per query
-                response = client.beta.search(search_queries=[query], max_results=20)
+                response = client.beta.search(search_queries=[query], max_results=20, mode="agentic")
                 
                 if response.results:
                     for res in response.results:

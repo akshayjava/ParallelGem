@@ -3,10 +3,13 @@ import json
 import requests
 import google.generativeai as genai
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # API Keys
-PARALLEL_API_KEY = "Hon7rLk0I2Gc56SvYnszXN5OW710jxb0kXujnmKt"
-GEMINI_API_KEY = "AIzaSyDbP7ZYEreKdUCUjW1Jbk4fCrJgBmyUwSY"
+PARALLEL_API_KEY = os.getenv("PARALLEL_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Configure Gemini
 genai.configure(api_key=GEMINI_API_KEY)
