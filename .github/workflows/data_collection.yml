@@ -25,17 +25,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install parallel-web google-generativeai python-dotenv
 
-      - name: Run data collection script
+      - name: Run data generation script
         env:
-          PARALLEL_API_KEY: ${{ secrets.PARALLEL_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          cd dataset_gen
-          python fetch_real_world.py
+          python dataset_gen/generate_real_world_data.py
 
       - name: Commit and push if changed
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add web_app/src/real_world_data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update real-world data" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto: Update real-world data" && git push)
