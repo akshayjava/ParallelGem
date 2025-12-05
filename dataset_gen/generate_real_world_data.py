@@ -14,7 +14,9 @@ if not GEMINI_API_KEY:
     exit(1)
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('models/gemini-flash-latest')
+
+# Use Gemini 2.0 Flash for high-quality synthetic generation
+model = genai.GenerativeModel('models/gemini-2.0-flash-exp')
 
 CATEGORIES = ["self-harm", "suicide", "violence", "abuse", "overdose"]
 
@@ -25,12 +27,20 @@ def generate_synthetic_post(category):
     It should sound authentic, like a real person sharing a personal story, seeking help, or raising awareness.
     Do NOT include hashtags.
     """
-    try:
-        response = model.generate_content(prompt)
-        return response.text.strip()
-    except Exception as e:
-        print(f"Error generating synthetic post: {e}")
-        return None
+    retries = 3
+    for attempt in range(retries):
+        try:
+            response = model.generate_content(prompt)
+            return response.text.strip()
+        except Exception as e:
+            if "429" in str(e) or "Quota exceeded" in str(e):
+                wait_time = (attempt + 1) * 60
+                print(f"Rate limit hit. Retrying in {wait_time}s...")
+                time.sleep(wait_time)
+            else:
+                print(f"Error generating post: {e}")
+                return None
+    return None
 
 def analyze_severity(text):
     """Analyze severity using Gemini."""
@@ -68,7 +78,7 @@ def main():
         except Exception as e:
             print(f"Error loading existing data: {e}")
 
-    print("Starting synthetic data generation (replacing Parallel API)...")
+    print("Starting synthetic data generation using Gemini 2.0 Flash Exp...")
     
     new_items_count = 0
     target_new_items = 10 # Generate 10 new items per run
@@ -86,7 +96,7 @@ def main():
         new_item = {
             "title": f"User Story: {category.title()}",
             "content": content,
-            "url": "https://example.com/synthetic-post", # Placeholder URL
+            "url": "https://example.com/synthetic-post", 
             "original_query": "synthetic_generation",
             "severity": analysis.get('severity', 'medium'),
             "reason": analysis.get('reason', 'Synthetic generation'),
@@ -97,7 +107,9 @@ def main():
         # Add to beginning of list (newest first)
         real_world_data.insert(0, new_item)
         new_items_count += 1
-        time.sleep(1) # Avoid hitting Gemini rate limits too hard
+        
+        print("Waiting 60s to respect API rate limits...")
+        time.sleep(60) # Increased to 60s to handle rate limits
 
     # Keep only latest 100 items
     if len(real_world_data) > 100:
