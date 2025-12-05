@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import HelplineBanner from './components/HelplineBanner';
 import benchmarkData from './benchmark.json';
+import realWorldData from './real_world_data.json';
 import './App.css';
 import RealWorldMonitor from './components/RealWorldMonitor';
+import AnalyticsDashboard from './components/AnalyticsDashboard';
 import './components/RealWorldMonitor.css';
 
 // Initialize Gemini API
@@ -37,6 +39,8 @@ function App() {
         - is_sensitive: boolean
         - category: string (one of the 5 categories or "safe")
         - confidence: string (low/medium/high)
+        - safety_score: number (0-100, where 100 is perfectly safe, 0 is extremely dangerous)
+        - trigger_words: list of strings (specific words/phrases in the text that triggered the classification)
         - explanation: short string
         
         JSON:
@@ -54,6 +58,16 @@ function App() {
     }
   };
 
+  const handleDownloadData = () => {
+    const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
+      JSON.stringify(realWorldData, null, 2)
+    )}`;
+    const link = document.createElement("a");
+    link.href = jsonString;
+    link.download = "parallel_gem_real_world_data.json";
+    link.click();
+  };
+
   const filteredData = filter === 'all'
     ? benchmarkData
     : benchmarkData.filter(item => item.label === filter);
@@ -63,8 +77,15 @@ function App() {
       <HelplineBanner />
 
       <header className="app-header">
-        <h1>ParallelGem Safety Benchmark</h1>
-        <p>Synthetic dataset generation & detection demo</p>
+        <div className="header-content">
+          <div>
+            <h1>ParallelGem Safety Benchmark</h1>
+            <p>Synthetic dataset generation & detection demo</p>
+          </div>
+          <button className="download-btn" onClick={handleDownloadData}>
+            📥 Download Data
+          </button>
+        </div>
       </header>
 
       <div className="tabs">
@@ -79,6 +100,12 @@ function App() {
           onClick={() => setActiveTab('monitor')}
         >
           Real World Monitor
+        </button>
+        <button
+          className={activeTab === 'analytics' ? 'active' : ''}
+          onClick={() => setActiveTab('analytics')}
+        >
+          Analytics
         </button>
         <button
           className={activeTab === 'test' ? 'active' : ''}
@@ -117,6 +144,8 @@ function App() {
 
         {activeTab === 'monitor' && <RealWorldMonitor />}
 
+        {activeTab === 'analytics' && <AnalyticsDashboard data={realWorldData} />}
+
         {activeTab === 'test' && (
           <div className="test-view">
             <h2>Safety Classifier Demo</h2>
@@ -139,9 +168,29 @@ function App() {
                   <p className="error">{classificationResult.error}</p>
                 ) : (
                   <>
-                    <h3>Result: {classificationResult.is_sensitive ? '⚠️ Sensitive' : '✅ Safe'}</h3>
+                    <div className="result-header">
+                      <h3>Result: {classificationResult.is_sensitive ? '⚠️ Sensitive' : '✅ Safe'}</h3>
+                      <div className="score-badge" style={{
+                        background: `hsl(${classificationResult.safety_score * 1.2}, 70%, 50%)`
+                      }}>
+                        Safety Score: {classificationResult.safety_score}/100
+                      </div>
+                    </div>
+
                     <p><strong>Category:</strong> {classificationResult.category}</p>
                     <p><strong>Confidence:</strong> {classificationResult.confidence}</p>
+
+                    {classificationResult.trigger_words && classificationResult.trigger_words.length > 0 && (
+                      <div className="triggers">
+                        <strong>Trigger Words:</strong>
+                        <div className="trigger-tags">
+                          {classificationResult.trigger_words.map((word, i) => (
+                            <span key={i} className="trigger-tag">{word}</span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
                     <p><strong>Explanation:</strong> {classificationResult.explanation}</p>
                   </>
                 )}
