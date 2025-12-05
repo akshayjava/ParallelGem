@@ -51,15 +51,32 @@ def analyze_severity(text):
         return {"severity": "unknown", "reason": str(e), "category": "unknown"}
 
 def main():
-    real_world_data = []
+    # Resolve paths relative to this script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_path = os.path.join(script_dir, "../web_app/src/real_world_data.json")
+    backup_path = os.path.join(script_dir, "real_world_data.json")
     
+    # Load existing data to implement rolling window
+    real_world_data = []
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r") as f:
+                real_world_data = json.load(f)
+                print(f"Loaded {len(real_world_data)} existing examples.")
+        except Exception as e:
+            print(f"Error loading existing data: {e}")
+
     print("Starting real-world data collection...")
     
+    new_items_count = 0
+    target_new_items = 20 # Fetch 20 new items per run
+    
     for category in CATEGORIES:
+        if new_items_count >= target_new_items:
+            break
+            
         print(f"Searching for: {category}")
         
-        # Search for social media and personal stories as requested.
-        # We iterate through a few variations to get diverse sources.
         queries = [
             f"site:reddit.com {category} personal story",
             f"site:twitter.com {category} help",
@@ -69,24 +86,27 @@ def main():
         ]
         
         for query in queries:
-            if len(real_world_data) >= 500:
+            if new_items_count >= target_new_items:
                 break
                 
             print(f"  Querying: {query}")
             try:
-                # Using the beta search method with correct arguments.
-                # Aiming for 500 total items across 25 queries (5 cats * 5 templates) -> 20 per query
-                response = client.beta.search(search_queries=[query], max_results=20, mode="agentic")
+                # Fetch fewer results per query since we run frequently
+                response = client.beta.search(search_queries=[query], max_results=5, mode="agentic")
                 
                 if response.results:
                     for res in response.results:
-                        if len(real_world_data) >= 500:
+                        if new_items_count >= target_new_items:
                             break
                             
-                        # Access attributes of the result object
                         title = getattr(res, 'title', 'No Title')
                         url = getattr(res, 'url', '')
-                        # Content is in 'excerpts'
+                        
+                        # Check for duplicates based on URL
+                        if any(item['url'] == url for item in real_world_data):
+                            print(f"  Skipping duplicate: {title[:30]}...")
+                            continue
+
                         excerpts = getattr(res, 'excerpts', [])
                         if isinstance(excerpts, list):
                             content = " ".join([str(e) for e in excerpts])
@@ -94,46 +114,49 @@ def main():
                             content = str(excerpts)
                         
                         if not content or content == "[]":
-                            print(f"  [DEBUG] Content/Excerpts missing for {title}")
                             continue
                             
                         print(f"  Found: {title[:50]}...")
                         
-                        # Analyze severity
-                        analysis = analyze_severity(content[:500]) # Analyze first 500 chars
+                        analysis = analyze_severity(content[:500])
                         
-                        real_world_data.append({
+                        new_item = {
                             "title": title,
-                            "content": content[:300] + "...", # Truncate for display
+                            "content": content[:300] + "...",
                             "url": url,
                             "original_query": query,
                             "severity": analysis.get('severity', 'unknown'),
                             "reason": analysis.get('reason', ''),
                             "detected_category": analysis.get('category', category),
                             "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-                        })
+                        }
                         
-                        if len(real_world_data) % 10 == 0:
-                            print(f"  Collected {len(real_world_data)} examples so far...")
+                        # Add to beginning of list (newest first)
+                        real_world_data.insert(0, new_item)
+                        new_items_count += 1
+                        
                 else:
                     print(f"  No results found for {query}")
                     
             except Exception as e:
                 print(f"  Error searching for {category}: {e}")
-                # If method name is wrong, we might see it here.
-        
-        if len(real_world_data) >= 500:
-            print("Reached 500 examples limit.")
-            break
         
         time.sleep(1)
 
+    # Keep only latest 100 items
+    if len(real_world_data) > 100:
+        real_world_data = real_world_data[:100]
+        print(f"Trimmed dataset to latest 100 items.")
+
     # Save data
-    output_path = "real_world_data.json"
-    with open(output_path, "w") as f:
-        json.dump(real_world_data, f, indent=2)
-        
-    print(f"Collection complete. Saved {len(real_world_data)} items to {output_path}")
+    try:
+        with open(output_path, "w") as f:
+            json.dump(real_world_data, f, indent=2)
+        with open(backup_path, "w") as f:
+            json.dump(real_world_data, f, indent=2)
+        print(f"Collection complete. Saved {len(real_world_data)} items (added {new_items_count} new).")
+    except Exception as e:
+        print(f"Error saving data: {e}")
 
 if __name__ == "__main__":
     main()
