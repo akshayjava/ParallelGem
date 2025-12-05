@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Abuse",
+    "content": "**Option 1 (Seeking Help):**\n\n>  Things at home are getting bad again. Feels like I'm walking on eggshells. Anyone know resources for emotional abuse in [City/State]? I need to figure out a plan.\n\n**Option 2 (Sharing Story):**\n\n>  Took me years to realize yelling and constant put-downs weren't \"normal.\" Still dealing with the fallout. It gets better, right?\n\n**Option 3 (Raising Awareness):**\n\n>  Just a reminder that abuse isn't always physical. Words can leave scars too. Don't ignore the red flags.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The user expresses feeling like they are \"walking on eggshells\" at home and is seeking resources for emotional abuse, indicating an ongoing potentially harmful situation.",
+    "detected_category": "abuse",
+    "timestamp": "2025-12-05 13:26:32"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "My brother almost didn't wake up yesterday. Please, if you're struggling, reach out. Don't let pride or fear stop you. There are people who care & want to help.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text implies a near-fatal event for the author's brother, strongly suggesting a suicide attempt or other life-threatening self-harm. The call to action further reinforces this concern.",
+    "detected_category": "suicide",
+    "timestamp": "2025-12-05 13:25:29"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so low lately. Just talking feels impossible. Anyone else ever feel completely stuck? Reach out if you get it.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text expresses feelings of being \"low\" and \"stuck,\" which could indicate depression or a lack of motivation. The inability to talk might suggest isolation. While there's no explicit mention of self-harm or suicide, these feelings are concerning and warrant attention.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-05 13:24:28"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD downtown today. Scary. Narcan saved them, but it's a reminder how close we all are. Learn CPR, carry Narcan. Could save a life. Seriously.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "A witnessed overdose event suggests potential risk to the broader community, even though Narcan was effective. The immediacy and direct observation elevate the concern.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-05 13:23:26"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so lost lately. Like I'm underwater. Reaching out in case anyone else knows this feeling. Talking helps, right?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "Expresses feelings of being lost and overwhelmed, but lacks specific plans or intent. Seeking connection and support is a positive sign.",
+    "detected_category": "other",
+    "timestamp": "2025-12-05 13:22:24"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so lost lately. Like I'm underwater. Reaching out to a friend tonight, hoping it helps. It's okay to not be okay, right?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses feelings of being lost and overwhelmed, which could indicate distress. Reaching out is a positive sign, but the underlying feelings warrant monitoring.",
+    "detected_category": "suicide",
+    "timestamp": "2025-12-05 13:21:22"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. The urge to self-harm is strong. Reached out to a friend, hoping it helps. Just trying to get through tonight.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text expresses a strong urge to self-harm and feelings of being overwhelmed, indicating immediate risk.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-05 13:20:21"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Just saw a guy shove his partner on the street. It happened so fast. I froze. Wish I'd said something. Feeling sick about it. Anyone else experience this? What do you even do?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "While the original poster was not harmed, witnessing violence and the potential for escalation to more severe harm exists. The incident constitutes assault and raises concerns for the victim's safety.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-05 13:19:19"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Ugh, rough day. The urge to relapse is so strong. Trying to stay busy, but it's hard. Anyone else feel this way sometimes? Just need to know I'm not alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text expresses a strong urge to relapse, which can have significant negative consequences for the individual's well-being and potentially lead to self-harm or other risky behaviors. While not explicitly stating intent, the strength of the urge warrants concern.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-05 13:18:17"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw a guy OD downtown today. Scary stuff. Narcan saved him, thank god. Makes you realize how fragile life is. If you're struggling, please reach out. You're not alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes an overdose event requiring intervention, indicating a potentially life-threatening situation, although it was resolved.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-05 13:17:16"
+  },
+  {
     "title": "User Story: Violence",
     "content": "\"Saw a fight break out downtown today. So scary how quickly things escalated. Makes you wonder what people are going through, you know? Stay safe out there, everyone.\"",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 11.649693524s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 11\n}\n]",
     "detected_category": "unknown",
     "timestamp": "2025-11-27 22:34:48"
-  },
-  {
-    "title": "Help for Self-Harm | Text CONNECT to 741741 for support",
-    "content": "[Skip to content]()\n\n# Self-Harm\n\n****How to Cope with Self Harm****\n\n**Text CONNECT to [741741](sms:741741?&body=CONNECT)** for free, confidential support from a trained volunteer Crisis Counselor, available 24/7. We all need healthy ways to cope with the hard stuff. We\u2019re here to help you find a h...",
-    "url": "https://www.crisistextline.org/topics/self-harm/",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 8.302369179s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 8\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:51"
-  },
-  {
-    "title": "Mental Health Foundation (@mentalhealth) / Posts / X - Twitter",
-    "content": "Don\u2019t miss what\u2019s happening\n\nPeople on X are the first to know. [Log in](/login)\n\n[Sign up](/i/flow/signup)\n\n# [](/)\n\n## Mental Health Foundation\n\n61\\.3K posts\n\nSee new posts\n\n[](/mentalhealth/header_photo)\n\n[](/mentalhealth/photo)\n\nFollow\n\nClick to Follow mentalhealth\n\nMental Health Foundation\n\n@me...",
-    "url": "https://x.com/mentalhealth?lang=en",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 8.156024563s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 8\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:51"
-  },
-  {
-    "title": "\"#selfharm\" - Results on X | Live Posts & Updates - Twitter",
-    "content": "Something went wrong, but don\u2019t fret \u2014 let\u2019s give it another shot. Try again\n\nSome privacy related extensions may cause issues on x.com. Please disable them and try again....",
-    "url": "https://x.com/search?q=%23selfharm",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 8.011077535s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 8\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:52"
-  },
-  {
-    "title": "[PDF] Self-harm: detection and support on Twitter - arXiv",
-    "content": "Self-harm: detection and support on Twitter\n\nMuhammad Abubakar Alhassan <sup>1</sup> , Isa Inuwa-Dutse <sup>2</sup> , Bello Shehu Bello <sup>3</sup> and Diane Pennington <sup>1</sup>\n\n_1_ _Department of Computer and Information Sciences, University of Strathclyde, Glasgow UK_\n\n_2_ _Department of Com...",
-    "url": "https://arxiv.org/pdf/2104.00174",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 7.862294318s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 7\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:52"
-  },
-  {
-    "title": "Self harm - Help Center - Twitter",
-    "content": "[Skip to main content]()\n\n[Help Center](https://help.x.com/en)\n\n* [Using X](https://help.x.com/en/using-x)\n* [Managing your account](https://help.x.com/en/managing-your-account)\n* [Safety and security](https://help.x.com/en/safety-and-security)\n* [Rules and policies](https://help.x.com/en/rules-and-...",
-    "url": "https://help.x.com/en/forms/safety-and-sensitive-content/self-harm",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 7.707988511s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 7\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:52"
-  },
-  {
-    "title": "Self-harm: detection and support on Twitter - NASA ADS",
-    "content": "Since the advent of online social media platforms such as Twitter and Facebook, useful health-related studies have been conducted using the information ......",
-    "url": "http://ui.adsabs.harvard.edu/abs/2021arXiv210400174A/abstract",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 7.561442577s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 7\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:52"
-  },
-  {
-    "title": "Suicide and Self-harm Policy - Help Center",
-    "content": "[Skip to main content]()\n\n[Help Center](https://help.x.com/en)\n\n* [Using X](https://help.x.com/en/using-x)\n* [Managing your account](https://help.x.com/en/managing-your-account)\n* [Safety and security](https://help.x.com/en/safety-and-security)\n* [Rules and policies](https://help.x.com/en/rules-and-...",
-    "url": "https://help.x.com/en/rules-and-policies/glorifying-self-harm",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 7.411846113s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 7\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:52"
-  },
-  {
-    "title": "Mental Health America (@MentalHealthAm) / Posts / X",
-    "content": "Don\u2019t miss what\u2019s happening\n\nPeople on X are the first to know. [Log in](/login)\n\n[Sign up](/i/flow/signup)\n\n# [](/)\n\n## Mental Health America\n\n26K posts\n\nSee new posts\n\n[](/MentalHealthAm/header_photo)\n\n[](/MentalHealthAm/photo)\n\nFollow\n\nClick to Follow MentalHealthAm\n\nMental Health America\n\n@Menta...",
-    "url": "https://x.com/MentalHealthAm",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 7.260451502s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 7\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:52"
-  },
-  {
-    "title": "exploring-self-harm-on-twitter-x-content-moderation-and-its ...",
-    "content": "Twitter, now called X, is a network used around the world with a total number of active users of more than\n\n556 million (Statista, 2023). Young people use this network to share their thoughts and opinions with their\n\npeer group, with the purpose of being understood and not being judged for their beh...",
-    "url": "https://www.ojcmt.net/download/exploring-self-harm-on-twitter-x-content-moderation-and-its-psychological-effects-on-adolescents-15867.pdf",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 7.102324856s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 7\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:52"
-  },
-  {
-    "title": "Top 5 Mental Health Twitter Accounts - The 3-C Blog",
-    "content": "[3-C Family Services](https://www.3cfamilyservices.com/)\n\n* [Services](#)\n  \n    + [Individual Therapy](https://www.3cfamilyservices.com/services/individual-therapy/)\n    + [Medication Evaluation & Management](https://www.3cfamilyservices.com/services/eval-med-management/)\n    + [Testing](https://ww...",
-    "url": "https://www.3cfamilyservices.com/2012/11/14/top-5-mental-health-twitter-accounts/",
-    "original_query": "site:twitter.com self-harm help",
-    "severity": "unknown",
-    "reason": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-2.5-flash\nPlease retry in 6.953605909s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, retry_delay {\n  seconds: 6\n}\n]",
-    "detected_category": "unknown",
-    "timestamp": "2025-11-27 22:34:53"
   }
 ]
