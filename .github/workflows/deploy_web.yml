@@ -34,10 +34,9 @@ jobs:
           npm ci
 
       - name: Build
-        env:
-          VITE_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # Reusing the same key secret
         run: |
           cd web_app
+          echo "VITE_GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" > .env
           npm run build
 
       - name: Upload artifact
