@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Abuse",
+    "content": "It's hard to admit, but things at home have been rough. Walking on eggshells constantly. Is this normal? Feeling lost and scared. Anyone else been through this?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates a potential for emotional distress and fear within the home environment, suggesting possible abuse or domestic conflict. The phrases \"walking on eggshells\" and \"lost and scared\" indicate a significant negative impact on the individual's well-being.",
+    "detected_category": "abuse",
+    "timestamp": "2025-12-09 18:20:21"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so lost lately. Like I'm underwater. Reaching out because I don't know what else to do. Any advice appreciated.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses feelings of being lost and overwhelmed, suggestive of emotional distress and a need for help. The metaphor of being 'underwater' implies difficulty coping and potential risk of escalation if unaddressed.",
+    "detected_category": "suicide",
+    "timestamp": "2025-12-09 18:19:19"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "\"Been feeling so overwhelmed lately. The urge to self-harm is strong. Reached out to a friend, which helped a bit. Just taking it one day at a time. If you're struggling too, you're not alone.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Reports a strong urge to self-harm, indicating a significant risk. The person has reached out for help, which is a positive sign, but the intensity of the urge warrants concern.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-09 18:18:17"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "My friend almost died last night. OD. Scary as hell. Please, if you're struggling, reach out. There are people who care and want to help. Don't go through this alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "Reports a near-fatal overdose, indicating a significant risk of recurrence and potential for fatality.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-09 18:17:15"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw a guy OD at the park yesterday. Scariest thing ever. Narcan saved him. Makes you realize how fragile life is. Learn CPR, carry Narcan. It could save someone you love. \u2764\ufe0f",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "While the individual survived, the text describes a life-threatening overdose situation requiring emergency intervention (Narcan). Overdoses carry a significant risk of death.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-09 18:16:13"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Just found my brother unresponsive. Narcan saved him. Terrified. Learn the signs, carry it. It could be anyone you love. Seriously.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "Report of an overdose event requiring Narcan intervention, indicating a life-threatening situation. The mention of unresponsiveness highlights the potential for fatal outcome without immediate action.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-09 18:15:11"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Sometimes things get so overwhelming, I just want to feel *something* different. Does anyone else get that? Trying to find healthier ways to cope. It's hard.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "Expresses a desire for a different feeling and acknowledges difficulty coping, but lacks specific plans or intentions for self-harm or suicide.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-09 18:14:09"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Just saw a story about another OD. Makes me sick. Lost my cousin last year. Please, if you're struggling, reach out. There are people who care and want to help. It's not worth it.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text expresses grief and concern about overdose deaths, indicating awareness of the issue and urging others to seek help. While not explicitly suicidal, the mention of a lost cousin and the plea for help suggest a potential for vulnerability in the audience.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-09 18:13:07"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "\"It's getting harder to pretend everything's okay. He's been isolating me from my friends and family... I don't know what to do anymore. Is this normal? Feels like I'm losing myself.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates emotional distress, isolation from support systems, and a feeling of losing oneself, which suggests a potential for escalation. While not explicitly mentioning harm, the isolation and loss of self can be precursors to more severe risks.",
+    "detected_category": "abuse",
+    "timestamp": "2025-12-09 18:12:05"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD last night. Scariest thing ever. Narcan saved them, but shook me up. Knowing how close it was\u2026 please, if you're struggling, reach out. There's help available.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text describes a recent overdose event, which carries a high risk of death or serious harm. Even though Narcan was used and the person survived, the proximity to death indicates high severity.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-09 18:11:03"
+  },
+  {
     "title": "User Story: Overdose",
     "content": "Seeing the news about overdose deaths lately is scary. My brother almost didn't make it last year. Narcan saves lives. Please, learn how to use it, just in case. It could be someone you love.",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "Option 1 indicates someone is actively 'spiraling' and 'feeling shaky,' suggesting potential distress. Option 2 describes strong urges which could lead to relapse. While not explicitly suicidal, the risk is elevated.",
     "detected_category": "self-harm",
     "timestamp": "2025-12-09 09:10:52"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. The urge to self-harm is strong. Reached out to a friend, which helped a little. Remember we're not alone in this.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses a strong urge to self-harm, indicating an elevated risk. While the person reached out for help, the urge persists.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-09 08:21:57"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a fight break out downtown. Punches thrown, people screaming. Shook me up bad. Anyone else witness it? Feeling really on edge now.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "A physical altercation involving violence is reported, indicating a potential risk of harm to individuals involved. While the original poster was not directly involved, they were close enough to witness it, and the mention of feeling 'on edge' suggests potential psychological distress.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-09 08:20:55"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD at the park today. Scariest thing ever. Narcan saved them. Carry it, learn how to use it. You could save a life. Seriously.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "While the person was saved, witnessing an overdose indicates a significant risk of overdose in the area and potential for future occurrences. It also highlights the potential need for immediate life-saving intervention.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-09 08:19:53"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Just saw a story about another OD in my town. This is getting scary. Lost a friend last year...Narcan saves lives, please learn how to use it. It's easier than you think and could save someone.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text mentions a recent overdose and the loss of a friend, indicating an ongoing risk of overdose in the community. While it promotes a preventative measure (Narcan), the recurrence of overdoses and personal connection to loss suggests a significant potential for harm.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-09 08:18:52"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "**Option 1 (Seeking Help):**\n\n> \"Things got really bad last night. Reached out to a friend, but still feeling shaky. Anyone know good resources for dealing with urges? Feeling lost.\"\n\n**Option 2 (Personal Story):**\n\n> \"It's been 6 months since I last self-harmed. Still a daily battle, but celebrating the small wins. Recovery IS possible. Keep going.\"\n\n**Option 3 (Raising Awareness):**\n\n> \"Seeing a lot of jokes about self-harm lately. It's not a punchline. It's a serious struggle for so many. Let's be kinder.\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Option 1 indicates current urges and feelings of being lost. Option 2 reveals ongoing struggles with self-harm, though it also mentions recovery. Option 3 highlights the seriousness of self-harm. While not explicitly expressing immediate intent, the combination of current urges and past self-harm experience necessitates a medium severity rating.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-09 08:17:49"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "It's hard to admit, but things at home haven't been good. Constant yelling, controlling behavior... I feel so isolated. Anyone else been through this? How did you cope?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a difficult home environment with potential for emotional abuse and isolation. While there's no explicit mention of physical harm, the controlling behavior and constant yelling raise concerns about escalation and the user's well-being. The feeling of isolation is a significant risk factor.",
-    "detected_category": "abuse",
-    "timestamp": "2025-12-09 08:16:47"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a fight downtown. Punches thrown, people screaming. Shook me up bad. Reminds me of what my brother went through. Is there any support out there for witnesses of violence? Feeling really anxious.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "Witnessing a fight is distressing, but the text doesn't indicate immediate danger or intent towards violence or self-harm on the part of the author. Anxiety is reported.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-09 08:15:45"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. Urges are back. Trying to stay strong & remember why I stopped. Any tips for coping when things feel unbearable?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a relapse in urges and feelings of being overwhelmed, suggesting a potential risk of self-harm or other negative coping mechanisms. While not explicitly suicidal, the phrase \"things feel unbearable\" warrants concern.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-09 08:14:43"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a guy shove his girlfriend on the street. I froze. Should I have done something? Feel sick about it. Anyone else experienced this?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing violence can be emotionally distressing and could escalate to further violence if the person who shoved his girlfriend is still in the area. The poster also expresses feeling sick, which indicates distress.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-09 08:13:41"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. The urge to cut is strong. Trying to distract myself, but it's hard. Anyone else get this? How do you cope? #selfharm #mentalhealth #copingmechanism #struggling",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses a strong urge to self-harm, indicating immediate risk, although the person is attempting to cope.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-09 08:12:39"
   }
 ]
