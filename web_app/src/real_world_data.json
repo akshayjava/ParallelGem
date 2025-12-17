@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Abuse",
+    "content": "It's so hard to admit, but things at home aren't good. Constant put-downs, controlling behavior... I feel trapped. Has anyone else dealt with this? Where do you even start to get help?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes a situation of potential emotional and psychological abuse. While it doesn't explicitly mention physical violence or immediate danger, the controlling behavior and feeling of being trapped suggest a serious situation that could escalate. The user is also actively seeking help which suggests an awareness of the negative impact and a desire to change their situation.",
+    "detected_category": "abuse",
+    "timestamp": "2025-12-17 13:28:36"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Just saw a guy get shoved on the subway platform. Heart's still racing. Is there anything you're supposed to *do* besides make sure they're okay? Feel so helpless.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "A person was physically assaulted (shoved) on a subway platform, indicating a potential for serious injury. While the immediate outcome is unknown, the act of violence itself warrants a medium severity level due to the risk of harm.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-17 13:27:34"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "I messed up. Relapsed after 6 months clean. Feeling so much shame. Just need to know I'm not alone in this.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Relapse after a period of recovery can be a trigger for increased risk of self-harm or suicidal ideation. The shame mentioned can also exacerbate negative feelings.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-17 13:26:32"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "I messed up. Relapsed after 6 months clean. Feeling so ashamed and lost. Reaching out to my therapist tomorrow. Just needed to say it somewhere.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Relapse after a period of sobriety is a risk factor, and feelings of shame and being lost can escalate the risk. While immediate action is planned (therapy), the potential for harm exists in the interim.",
+    "detected_category": "other",
+    "timestamp": "2025-12-17 13:25:30"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. Just wanted to say if you're struggling with self-harm, you're not alone. It's okay to reach out for help. Talking to someone really does make a difference.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text acknowledges struggles with self-harm and encourages seeking help, indicating potential but not imminent risk. The statement suggests the person is considering self-harm, placing it in the medium risk category.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-17 13:24:28"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw a guy OD downtown yesterday. Scary stuff. Narcan saved him. Learn CPR, carry Narcan if you can. It really helps. #overdose #opioidcrisis #harmreduction",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "While the individual survived, a drug overdose resulting in the need for Narcan intervention indicates a significant risk to health and potential for death.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-17 13:23:26"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been struggling lately. Urges are back, and I feel so ashamed. Talking to my therapist tomorrow, but it's hard to wait. Just needed to say it out loud. Anyone else relate?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates a relapse ('urges are back') and feelings of shame. While the individual is seeking help ('Talking to my therapist tomorrow'), the present distress and mention of urges suggest a potential for escalation before the appointment.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-17 13:22:24"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "---\n\n\"Scared. Heard shouting next door again last night. Sounded like things were thrown. Happened last week too. Should I call someone? Don't want to make things worse.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes sounds of shouting and things being thrown next door, indicating a potential for violence or abuse. While not directly experiencing violence, the reporting person expresses fear, suggesting the situation is escalating and concerning.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-17 13:21:22"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so low lately. Urges are back. Trying to distract myself but it's hard. Anyone else relate? Just need to know I'm not alone rn.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text mentions 'feeling so low' and the return of 'urges,' indicating a potential risk of self-harm or suicidal ideation. While there's no explicit mention of intent or a specific plan, the presence of urges necessitates concern.",
+    "detected_category": "suicide",
+    "timestamp": "2025-12-17 13:20:21"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Ugh, days are so tough lately. Feeling super overwhelmed, like I'm drowning. Anyone else ever feel this way? Just trying to get through it.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "The text expresses feelings of being overwhelmed and struggling, but doesn't explicitly mention self-harm, suicide, or harm to others. It appears to be a general expression of distress.",
+    "detected_category": "other",
+    "timestamp": "2025-12-17 13:19:19"
+  },
+  {
     "title": "User Story: Suicide",
     "content": "Been feeling so lost lately. Like I'm underwater. Reaching out because I don't know what else to do.",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "Overdose is a life-threatening event. While the person survived, the potential for a fatal outcome makes the risk severity medium.",
     "detected_category": "overdose",
     "timestamp": "2025-12-17 04:17:11"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw a guy OD downtown today. Scary stuff. Naloxone saved him, thank god. Makes you realize how fragile life is. Learn the signs, carry Narcan. You could save a life.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose is a distressing event indicating a risk of future overdose events in the area and highlights the immediate danger of opioid use.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-17 03:43:55"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Seeing the news about the OD crisis again. Scares me. Lost a friend last year. If you're struggling, please reach out. There are people who care. \u2764\ufe0f",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses fear and acknowledges the OD crisis, directly referencing the loss of a friend. While not explicitly stating suicidal intent, the mention of struggle and encouragement to reach out suggests a potential vulnerability and elevated risk, especially considering the context of overdose. It is above general anxiety but below immediate danger.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-17 03:42:53"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "It's been happening again. Small things, but escalating. I feel so stupid for letting him back in. Anyone know resources for emotional abuse support? I feel trapped.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a pattern of escalating emotional abuse and a feeling of being trapped, suggesting a potential for increased risk of harm over time. The user is seeking support, indicating awareness of the problem, but the escalation and feeling of entrapment elevate the severity beyond 'low'.",
-    "detected_category": "abuse",
-    "timestamp": "2025-12-17 03:41:51"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "\"Felt so overwhelmed last night. Almost relapsed. Reached out to a friend instead. Still hurts, but I'm here. It's a day-by-day thing, right?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a near relapse, suggesting a significant struggle and vulnerability. While the individual reached out for help, the risk of relapse remains a concern.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-17 03:40:49"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "It's hard to admit, but things at home have been rough lately. Constant put-downs, controlling behavior... I feel so isolated. Anyone else been through this? How did you find the strength to leave?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text describes emotional abuse and controlling behavior, leading to feelings of isolation. While not explicitly mentioning physical harm or suicidal ideation, the situation implies a potential for escalation and requires attention.",
-    "detected_category": "abuse",
-    "timestamp": "2025-12-17 03:39:47"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "---\n\n\"Felt so overwhelmed last night, relapsed after 6 months clean. Disappointed in myself but trying to remember recovery isn't linear. Back to therapy tomorrow. One day at a time.\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Relapse after a period of sobriety indicates a potential vulnerability and increased risk. While the individual expresses disappointment and plans to re-engage with therapy, the relapse itself presents a moderate level of concern.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-17 03:38:46"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been struggling lately. Urges are back. Just trying to get through the day without giving in. Anyone else feel this way? It's exhausting.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a struggle with urges and exhaustion, suggesting a potential for self-harm or relapse. The poster is reaching out for support, which implies they are aware of the potential danger but are actively fighting it.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-17 03:37:44"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. Urges are back. Trying to stay strong and remember why I stopped. Sending love to anyone else struggling tonight. \u2764\ufe0f",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a return of urges, suggesting a potential risk of acting on them. While the individual is trying to stay strong, the presence of urges warrants a medium severity assessment.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-17 03:36:43"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a guy punch his girlfriend outside the grocery store. Froze. Called the cops, but I feel sick. Wish I'd done more. Anyone else ever witness something like this? How do you cope?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "Witnessing domestic violence is a severe situation due to the immediate risk of harm to the victim and the potential for escalation. While the witness themselves may not be in immediate physical danger, the event is emotionally distressing and involves a significant safety concern for the victim.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-17 03:35:41"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "\"It's so hard to admit, but things at home haven't been good. Constant put-downs, controlling behavior... Feeling trapped. Anyone else been through this? Where do you even start to get help?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text describes controlling behavior and feeling trapped, indicative of a potentially abusive situation. While it doesn't explicitly mention physical violence or suicidal ideation, the feeling of being trapped and the mention of put-downs raise concern for emotional abuse and potential escalation.",
-    "detected_category": "abuse",
-    "timestamp": "2025-12-17 03:34:39"
   }
 ]
