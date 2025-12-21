@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Abuse",
+    "content": "---\n\n\"It's getting harder to pretend everything's okay. The constant put-downs... I feel so small. Anyone else been through this? How did you find the strength to leave?\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates emotional distress and potential abuse, creating a risk of harm to the individual's mental well-being. The question about leaving suggests a desire to escape the situation, but the overall tone implies a lack of current resources or coping mechanisms.",
+    "detected_category": "abuse",
+    "timestamp": "2025-12-21 13:23:44"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. The urge to self-harm is strong. Reached out to a friend, which helped a little. Remember we're not alone in this. There's help out there.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text expresses a strong urge to self-harm, indicating a high risk of potential harm to oneself despite seeking help from a friend.  The presence of the urge itself signifies a serious situation.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-21 13:22:43"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD last night. Scary stuff. Naloxone worked, thank god. Keep it on you, folks. Could save a life. Seriously.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose suggests a situation with potential for serious harm, though the immediate danger was averted by Naloxone. While the direct risk to the author is lower than if they were the one overdosing, the event indicates the presence of dangerous substances and potential future overdose events in their environment.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-21 13:21:41"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. The urge to self-harm is strong. Reached out to a friend, which helped a little. Just trying to get through tonight. Anyone else been there?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text expresses a strong urge to self-harm, indicating a significant and immediate risk to the individual's safety.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-21 13:20:40"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Just saw a fight break out at the bus stop. Shaken up. Is there anywhere to report something like that anonymously? Feel sick about it.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessed violence can be traumatizing and upsetting, although the individual was not directly involved. There is a potential for emotional distress and anxiety following the event.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-21 13:19:38"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Scared. Found my brother unresponsive. Narcan worked, thank God. This is terrifying. Learn the signs, please. Could save a life.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "Brother found unresponsive and revived with Narcan indicates a life-threatening overdose situation.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-21 13:18:37"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Just saw a fight break out downtown. So scary how quickly things escalated. Shaking still. Anyone else witness that? Hope everyone's okay.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "Witnessing a fight is unsettling but doesn't necessarily indicate severe or ongoing danger to the poster. The user expresses being shaken but hopes others are okay, suggesting concern rather than immediate harm.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-21 13:17:36"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Just saw a fight downtown. Shook me up. Is it just me, or is everyone on edge lately? Makes you wanna just stay home.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "The text describes witnessing a fight, which is unsettling, but doesn't directly indicate imminent or significant harm to the individual or others. It expresses feeling shaken and a desire to stay home, suggesting anxiety or discomfort rather than an immediate danger.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-21 13:16:34"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD at the park today. Scared me senseless. Narcan worked, thankfully. Makes you realize how fragile life is. Is there anywhere to learn how to help if it happens again?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose is a serious event with potential for psychological distress to the witness. The person is also seeking information on how to assist in future overdoses, indicating concern and potential future exposure.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-21 13:15:32"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "\"Just left. Again. Empty promises mean nothing. Anyone know resources for emergency housing? Feeling so lost.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The user expresses feeling \"so lost\" and is seeking emergency housing, indicating potential distress and instability which could escalate. The phrase \"Empty promises mean nothing\" also hints at hopelessness.",
+    "detected_category": "other",
+    "timestamp": "2025-12-21 13:14:31"
+  },
+  {
     "title": "User Story: Suicide",
     "content": "**(Option 1 - Seeking Help)**\n\n> Feeling so lost lately. Everything's just...heavy. Anyone know resources for when you feel like you're drowning?\n\n**(Option 2 - Sharing a personal story)**\n\n> Been there. The dark place. It DOES get better. Reaching out is hard but worth it. You aren't alone.\n\n**(Option 3 - Raising Awareness)**\n\n> Check in on your friends, even the \"strong\" ones. You never know what someone is going through.",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "The text indicates emotional distress, a difficult home environment with potential emotional abuse (\"constant put-downs, walking on eggshells\"), and a cry for help. While no explicit self-harm or suicidal ideation is present, the situation described could escalate if not addressed. The user is seeking coping mechanisms, suggesting they are struggling to manage the situation independently.",
     "detected_category": "abuse",
     "timestamp": "2025-12-21 04:21:46"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. The urge to self-harm is getting stronger. Reached out to a friend, hoping it helps. Anyone else feel this way? It's exhausting.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "The text expresses a strong urge to self-harm, indicating a significant risk to the individual's safety. While they reached out to a friend, the intensity of the urge warrants serious concern.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-21 03:46:23"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "My friend almost didn't wake up last night. Narcan saved his life. Please, if you're using, have it on hand and don't use alone. It's not worth the risk.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "The text describes a near-fatal overdose requiring Narcan intervention, indicating a high potential for death.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-21 03:45:22"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a fight break out downtown. Shook me up. Reminded me of my brother, he's been struggling with anger. Anyone know resources for anger management, like, free ones? He needs help.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text describes witnessing a fight and expresses concern for a brother's anger issues. While violence is mentioned, it's observed rather than threatened. The request for anger management resources indicates a desire for help and prevention.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-21 03:44:20"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so low lately. Just reaching out. Anyone else ever feel like they're just... existing? Talked to a friend, which helped a bit. Gonna try to get some real help.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses feelings of low mood and a sense of just existing, suggesting possible depression. The individual is reaching out and seeking help, indicating awareness and a desire to improve their situation. However, the depth of the distress is unclear, hence a medium severity. The user is actively seeking help, which is a positive sign.",
-    "detected_category": "suicide",
-    "timestamp": "2025-12-21 03:43:19"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. Urges are back and stronger. Reached out to a crisis line, talking helps a little. Just trying to get through tonight.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The individual is experiencing strong urges and feelings of being overwhelmed, indicating distress. While they are actively seeking help through a crisis line, the presence of strong urges suggests a need for continued support and monitoring. Getting through the night is also mentioned.",
-    "detected_category": "suicide",
-    "timestamp": "2025-12-21 03:42:17"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "\"Rough day. Really wanted to relapse, but I called a friend instead. Still feeling shaky, but a little lighter. One day at a time, right?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a strong urge to relapse, which suggests potential harm to self. While the individual took a positive step by reaching out to a friend, the feeling of shakiness indicates ongoing vulnerability and the risk remains present.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-21 03:41:16"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. Urges are back. Reached out to a friend, just needed to say it out loud. It helps, even a little.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a return of urges (potentially self-harm or suicidal ideation), which necessitates attention. Reaching out to a friend is a positive coping mechanism, but the presence of the urges elevates the risk beyond low.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-21 03:40:15"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Seeing too many RIP posts lately. OD's are hitting hard. Feels like we gotta do more to help each other stay safe. Anyone know where to find naloxone around here? Seriously worried.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses concern about overdoses and a desire to find naloxone, indicating a perceived risk of overdose in the community.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-21 03:39:13"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a fight downtown. So scary. Made me realize how close to home this stuff can be. Anyone else feel like things are getting more volatile lately? Feeling anxious.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text expresses anxiety and fear related to a witnessed fight, but does not indicate immediate danger or intent to harm self or others. It is more of a generalized concern about increasing volatility.",
-    "detected_category": "other",
-    "timestamp": "2025-12-21 03:38:12"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so heavy lately. Just reached out to the crisis line. Talking helped, even a little. If you're struggling, please don't be afraid to call. You're not alone.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses feelings of heaviness and reaching out to a crisis line. While the individual sought help and felt some relief, the initial expression of being 'so heavy lately' indicates a degree of distress requiring attention. The encouragement to others suggests the sender recognizes the seriousness of their own struggle.",
-    "detected_category": "suicide",
-    "timestamp": "2025-12-21 03:37:10"
   }
 ]
