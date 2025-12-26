@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Violence",
+    "content": "Just saw a fight downtown. Makes me sick. Reminded me of what my brother went through last year. Is there anywhere to volunteer to help victims of assault? Feeling so helpless.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "The text describes witnessing a fight and expressing a desire to help victims of assault, but it doesn't indicate imminent danger to the author or others. While upsetting, it doesn't present a direct threat.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-26 19:16:10"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been struggling lately. Urges are back. Reached out to a crisis line. Talking helps, even if it's just a little. If you're feeling it too, please reach out. You're not alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates the return of urges and seeking help from a crisis line, suggesting distress and potential risk. While the person is actively seeking support, the presence of urges warrants a medium severity assessment.",
+    "detected_category": "suicide",
+    "timestamp": "2025-12-26 19:15:08"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "\"Been feeling so heavy lately, like I'm underwater. Just reaching out... anyone else ever feel this way? Not sure what to do.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses feelings of being overwhelmed and reaching out for help, suggesting emotional distress and potential for self-harm if support isn't received.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-26 19:14:07"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD last night. Scariest thing ever. Narcan saved them, but it shook me up. We need more resources & less stigma so people get help BEFORE it gets that bad. Please look out for each other.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "While the overdose was averted, it indicates a significant safety risk in the environment and potential for future, possibly fatal, incidents.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-26 19:13:05"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD at the park today. Scared me senseless. Called 911, they\u2019re okay now, but damn. Learn CPR, people. You might save a life.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "While the immediate threat is resolved, the text describes an overdose event, indicating a potential ongoing risk to others in the community. The call to action to learn CPR suggests the event highlighted the potential for fatality. Although the person survived, the overdose represents a significant health risk.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-26 19:12:04"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Just saw another memorial post. Feels like every week. Please, if you're struggling, reach out. There are people who care and want to help you stay here. \u2764\ufe0f",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text suggests a recurring pattern of suicide or accidental death (potentially overdose) in the author's community, which indicates a heightened risk environment. The direct encouragement to seek help implies awareness of individuals struggling with potentially life-threatening issues.",
+    "detected_category": "suicide",
+    "timestamp": "2025-12-26 19:11:02"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "---\n\nJust got out of the hospital after Narcan saved my life. Scared straight. This stuff is no joke. Anyone else been there? Feeling so alone right now.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "Recent overdose requiring Narcan indicates a high risk of future overdose and potential fatality. The user also expresses feelings of isolation which further exacerbate the risk.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-26 19:10:00"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. The urge to cut is strong. Trying to stay clean, taking it one hour at a time. Anyone else relate? How do you cope?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text expresses a strong urge to self-harm (cutting), indicating a potential risk. While the individual is actively trying to cope, the presence of the urge elevates the severity beyond low.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-26 19:08:59"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been having a rough time lately. Urges are back. Trying to stay strong and remember why I stopped. It's a daily battle. Anyone else feel this way?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates a relapse of urges and a struggle to maintain sobriety. While not explicitly suicidal or self-harming, the relapse increases the risk of engaging in harmful behaviors.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-26 19:07:58"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD last night. Scariest thing ever. Narcan saved their life. Please, learn how to use it. It could save someone you love.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose suggests a potential for future overdoses in the community, and the proximity of the event increases the likelihood of exposure for others. While Narcan was effective in this instance, it highlights the risk of opioid use and related dangers.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-26 19:06:56"
+  },
+  {
     "title": "User Story: Suicide",
     "content": "Been feeling so lost lately. Like I'm underwater and can't find the surface. Reaching out because I don't know what else to do.",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "The text indicates a return of urges and difficulty coping, suggesting a potential escalation of risk. While not explicitly mentioning self-harm or suicide, the presence of urges warrants concern.",
     "detected_category": "self-harm",
     "timestamp": "2025-12-26 10:09:32"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "It's getting harder to pretend everything's okay. He's been isolating me from my friends, and last night... I just need someone to tell me I'm not crazy. Is this abuse?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "The text describes isolation from friends and alludes to a potentially abusive incident. The question 'Is this abuse?' strongly suggests the individual is experiencing behavior that they recognize as potentially harmful and are seeking validation. Isolation is a significant risk factor for escalating abuse and potential violence.",
-    "detected_category": "abuse",
-    "timestamp": "2025-12-26 09:19:23"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "---\n\n\"Saw a fight on the bus today. Guy wouldn't stop harassing a woman, then it just exploded. Shaken up. Is there anywhere to report something like that anonymously?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "A physical altercation occurred on a bus, indicating a potential risk of violence and injury to those involved and potentially bystanders. While the reporter was not directly involved in the fight they expressed feeling 'shaken up' indicating distress.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-26 09:18:21"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Saw a fight on my street last night. Shook me up. Makes you wonder what's going on with people. Anyone else feel on edge lately?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "Witnessing a fight is unsettling, but the text doesn't indicate direct involvement, immediate threat, or specific intent to harm oneself or others.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-26 09:17:20"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so numb lately. The urge to feel *something*, anything, is overwhelming. Scared I might relapse. Anyone else relate? How do you cope?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses feelings of numbness, a strong urge for sensation, and fear of relapse, suggesting potential self-harm. While not explicitly stating suicidal intent, the desire to feel \"anything\" and the relapse concern warrant a medium severity assessment.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-26 09:16:18"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD last night. Scariest thing ever. They're okay now, thankfully. Makes you realize how fragile life is. Learn the signs, carry Narcan if you can. It saves lives. Seriously.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text describes an overdose event, which is a serious medical emergency. While the person survived, the event itself indicates a significant risk of harm.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-26 09:15:16"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "**Option 1 (Seeking Help):**\n\n> \"Things are rough at home lately. Walking on eggshells all the time. Is this normal? Feeling trapped and don't know who to talk to.\"\n\n**Option 2 (Sharing Experience):**\n\n> \"Took me years to realize it was abuse. The constant put-downs, the isolation... It's not okay. You deserve better.\"\n\n**Option 3 (Raising Awareness):**\n\n> \"Gaslighting is real, and it messes with your head. Don't let anyone make you doubt your own sanity.\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "While not explicitly stating intent to harm self or others, the text describes feelings of being trapped and experiencing potential abuse (gaslighting, put-downs, isolation). These are risk factors for mental health decline and potential escalation to more severe issues.",
-    "detected_category": "abuse",
-    "timestamp": "2025-12-26 09:14:15"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. The urge to cut is strong. Day 3 clean. Reached out to my therapist. Hope it helps. This sucks.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "Reports strong urges to self-harm (cutting) and feelings of being overwhelmed. While currently 3 days clean and reaching out to a therapist, the intensity of the urge indicates a significant risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-26 09:13:13"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD downtown today. Scary stuff. Narcan saved their life. Learn CPR, carry Narcan. You never know when you might need it. #overdose #narcan #cpr",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose suggests a potential risk to others in the vicinity due to the presence of illicit substances and the potential for needing to intervene. While Narcan was successful in this instance, the event still represents a concerning public health issue.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-26 09:12:11"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "---\n\n\"Just had another fight with my partner. Walking on eggshells constantly. Is this normal? Feeling so lost and alone.\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates ongoing relationship conflict, feeling lost and alone, and the potential for emotional distress, suggesting a moderate risk to the individual's well-being. The phrase 'walking on eggshells' is a potential indicator of an unhealthy or abusive relationship dynamic.",
-    "detected_category": "abuse",
-    "timestamp": "2025-12-26 09:11:10"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Sometimes it feels like the only way to feel *something* is to hurt. I know it's not healthy, and I hate it. Anyone else feel this way? Trying to find healthier coping mechanisms.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses a desire to self-harm, even if acknowledged as unhealthy. The user is seeking healthier coping mechanisms, indicating awareness and a desire to change, but the presence of self-harm ideation elevates the risk beyond 'low'.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-26 09:10:08"
   }
 ]
