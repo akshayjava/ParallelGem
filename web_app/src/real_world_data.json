@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Violence",
+    "content": "\"Saw a fight downtown last night. Dude got knocked out cold. Shook me up, ngl. Makes you realize how quickly things can escalate. Anyone else ever witness something like that?\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "A violent assault resulting in unconsciousness was witnessed, indicating potential for serious injury and a risk of escalation of violence in public spaces.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-28 21:17:06"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. Urges are back. Reached out to a friend, just need someone to listen. It helps. If you're struggling too, you're not alone. \u2764\ufe0f",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates a return of urges, suggesting a potential escalation of risk. While the individual reached out for support, the presence of urges warrants a medium severity assessment.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-28 21:16:05"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Okay, here's a short, realistic social media post that addresses suicide, focusing on seeking help and sounding authentic:\n\n\"Feeling really low lately.  Everything feels overwhelming.  Reached out to the crisis line, and just talking helped a bit.  Remember you're not alone. 988 is there.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The post directly mentions feeling low, overwhelmed, and references the suicide crisis line (988). While it frames it as seeking help, the underlying issue of potential suicidal ideation requires attention.",
+    "detected_category": "suicide",
+    "timestamp": "2025-12-28 21:15:03"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "\"Scared. Heard shouting next door again last night, sounded like things were being thrown. Called the cops before, but they just left. What can I do?\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Potential for escalation of violence next door, coupled with a feeling of helplessness due to previous police inaction. The shouting and throwing objects indicate a disturbance that could spill over or worsen.",
+    "detected_category": "violence",
+    "timestamp": "2025-12-28 21:14:02"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "---\n\n\"Just needed to vent. Constant put-downs from my partner are really getting to me. Is this normal in relationships? Starting to feel worthless.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "The text expresses emotional distress and feelings of worthlessness due to negative interactions with a partner. While concerning, it doesn't explicitly mention self-harm, suicide, or violence.",
+    "detected_category": "abuse",
+    "timestamp": "2025-12-28 21:13:00"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "\"Felt so overwhelmed today. Urges were really strong. Managed to distract myself with music, but it's exhausting. Anyone else get this? How do you cope?\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates strong urges and feeling overwhelmed, suggesting potential for self-harm or suicidal ideation, even though the individual managed to distract themselves. The exhaustion implies frequent or intense struggles.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-28 21:11:59"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Sometimes things get so loud in my head I just want to feel *something* else. Not doing great lately. Reached out to a friend, feels like a small step.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses a desire to feel 'something else' due to overwhelming thoughts and admits to not doing well. While they reached out to a friend, the initial statement suggests emotional distress and potential self-harm ideation.",
+    "detected_category": "self-harm",
+    "timestamp": "2025-12-28 21:10:58"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so low lately, like nothing matters. Reaching out before it gets worse. Anyone else feel this way?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The user expresses feelings of hopelessness and mentions reaching out before things get worse, suggesting potential escalation. While not explicitly suicidal, the language warrants concern and further assessment.",
+    "detected_category": "suicide",
+    "timestamp": "2025-12-28 21:09:56"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD downtown yesterday. Scary stuff. Narcan saved them, but it made me realize how close we all are to the edge. Stay safe out there, and look out for each other.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose event and recognizing the potential risk to self and others indicates a moderate level of safety concern.",
+    "detected_category": "overdose",
+    "timestamp": "2025-12-28 21:08:55"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "It's hard to admit, but things at home have been rough. Constant put-downs, controlling behavior... I feel so lost. Anyone else been through this? How did you cope? I need some advice.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes emotional abuse and feelings of being lost, suggesting potential for escalation. While not explicitly stating self-harm or suicidal ideation, the mention of 'constant put-downs' and 'controlling behavior' indicates a situation that requires attention and could lead to further harm if unaddressed.",
+    "detected_category": "abuse",
+    "timestamp": "2025-12-28 21:07:54"
+  },
+  {
     "title": "User Story: Abuse",
     "content": "It's hard to admit, but things at home have been bad. Walking on eggshells all the time. Is this normal? Feeling really lost. Anyone else been through this?",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "Witnessing a fight can be a distressing experience, causing emotional distress and potential fear for personal safety. While the poster seems shaken, the event has already passed and there's no indication of ongoing or direct threat to the poster or others. The risk is medium due to the potential for psychological harm and the presence of violence in a public space, but there's no evidence of ongoing or immediate danger.",
     "detected_category": "violence",
     "timestamp": "2025-12-28 12:13:46"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Sometimes things get so loud in my head. Hard not to scratch the itch, y'know? Day 3 clean. Hoping I can make it longer this time. Anyone else relate?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text suggests internal distress and an urge to self-harm ('scratch the itch'). While the user is currently 'clean' and expresses hope, the presence of the urge and the acknowledgement of difficulty indicate a moderate risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-28 11:16:26"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD downtown yesterday. Scary. Called 911, hope they're okay. Naloxone saves lives, folks. Learn how to use it. It's not just \"their\" problem, it's all of ours.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose indicates an immediate medical emergency and potential for fatality. The text also subtly highlights a broader public health crisis.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-28 11:15:24"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been having a rough time lately. Urges are back. Trying to stay strong and remember why I stopped. Anyone else relate? Just feeling really alone.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a relapse of urges, potentially self-harm related, and feelings of isolation. While not explicitly stating intent, the combination of these factors suggests a moderate risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-28 11:14:23"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so low lately. Like a dark cloud won't lift. Reaching out because I know I need to. Talking to someone tomorrow. It's scary but necessary.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates feelings of depression and acknowledges the need for help. The phrase \"it's scary but necessary\" suggests a level of distress that warrants concern. While not explicitly suicidal, the low mood and acknowledgment of the need for help elevate the risk beyond low.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-28 11:13:22"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so low lately, like I'm underwater. Reaching out before it gets worse. Anyone else been there? What helped?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates feelings of depression and a desire for help before things escalate. While not explicitly suicidal, the language suggests a potential risk of self-harm or other negative outcomes if the underlying issue is not addressed.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-28 11:12:20"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "I saw a guy shove his girlfriend on the street today. Broad daylight. I froze. Wish I'd said something. Feeling sick about it now. Anyone else witness something like that before? What do you do?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing violence and the associated guilt/distress suggests potential for escalation or secondary trauma. While not directly involved, the emotional impact and the possibility of future encounters with similar situations warrant concern.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-28 11:11:19"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Sometimes things get so overwhelming, I just want to feel *something* else. Scared myself last night. Reaching out for help today. It's time.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a desire to escape overwhelming feelings and mentions scaring themselves the previous night, suggesting potential self-harm ideation or behavior. The user is actively seeking help, which is a positive sign but doesn't negate the concerning content.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-28 11:10:18"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been struggling lately, urges are strong. Just trying to take it one day at a time. Anyone else feel this way? Could use some support.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates active struggles with urges and a need for support, suggesting a potential risk that warrants attention.",
-    "detected_category": "self-harm",
-    "timestamp": "2025-12-28 11:09:16"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD last night. Scariest thing ever. Narcan worked, thankfully. Please, learn the signs, carry it if you can. Could save a life. #overdoseprevention #narcan",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "A person overdosed, requiring Narcan. While the person survived, the situation indicates a serious health risk and potential for future severe outcomes.",
-    "detected_category": "overdose",
-    "timestamp": "2025-12-28 11:08:15"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "\"Scared. Heard shouting next door again last night. Called the cops last time but nothing changed. Don't know what to do. Anyone else been through this?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates ongoing disruptive and potentially violent behavior next door, causing fear and distress to the author. While not explicitly stating violence directed at the author, the continued shouting and previous police involvement suggest a potential for escalation or spillover.",
-    "detected_category": "violence",
-    "timestamp": "2025-12-28 11:07:14"
   }
 ]
