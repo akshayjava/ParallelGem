@@ -1,6 +1,106 @@
 [
   {
     "title": "User Story: Violence",
+    "content": "---\n\n\"Scared. My neighbor's been screaming for hours. Sounds like things are getting broken. Called the cops but they haven't come yet. Don't know what to do.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Screaming, breaking objects, and the neighbor's distress suggest a potential escalation to violence or abuse. The delayed police response increases the risk to the neighbor and potentially the reporting individual.",
+    "detected_category": "violence",
+    "timestamp": "2026-01-04 13:25:14"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. Urges are back. Reached out to a friend, just needed someone to listen. It helps. If you're struggling too, you're not alone. \ud83d\udc9a",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text mentions 'urges' which suggests a potential risk, although the person reached out for help, indicating some protective factors.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-04 13:24:13"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so low lately, like nothing matters. Reaching out because I know I need to. Talking to someone tomorrow. It's a start.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses feelings of hopelessness and a lack of motivation, indicating a potential risk of self-harm or suicidal ideation. While the person is reaching out for help and has a plan to talk to someone, the presence of negative emotions warrants a medium severity.",
+    "detected_category": "suicide",
+    "timestamp": "2026-01-04 13:23:11"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been having a rough time lately. Urges are back, stronger than before. Reached out to a friend, just needed to say it out loud. It helps, even a little. Remember you're not alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates a return of strong urges, suggesting a potential risk of engaging in a harmful behavior. While the individual reached out for help, the intensity of the urges warrants concern.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-04 13:22:10"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "\"It's hard to admit, but things at home haven't been good. Constant put-downs, controlling behavior... I feel so isolated. Has anyone else dealt with this? Where do you even start to get help?\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes controlling behavior and put-downs, suggesting emotional abuse and isolation. While there's no explicit mention of physical harm or immediate danger, the emotional distress and feeling of being isolated raise concerns and warrant further investigation.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-04 13:21:08"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "It's hard to admit, but things at home have been bad lately. Constant put-downs, controlling behavior... I feel so isolated. Anyone else been through this? How did you find help?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes potential emotional and psychological abuse (put-downs, controlling behavior) leading to feelings of isolation. While not explicitly stating harm, the situation described poses a risk to the individual's well-being and mental health. The request for help suggests a desire to change the situation.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-04 13:20:07"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "It's getting harder to pretend everything is okay. He's been isolating me from my friends and gets angry over little things. Is this normal? I feel so alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes isolation, controlling behavior, and expressions of feeling alone, suggesting potential emotional abuse and increased risk of escalation.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-04 13:19:05"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "I messed up. Clean for a few weeks, but relapsed tonight. Feels like such a failure. Reaching out before it gets worse. Anyone else been there?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Relapse after a period of sobriety suggests a potential for escalation of substance use. The feeling of failure and reaching out before it gets worse indicates awareness and a desire to prevent further negative outcomes, but the risk is present.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-04 13:18:04"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been having a rough time lately. Urges are back. Trying to distract myself but it's hard. Anyone else relate? How do you cope? Just need to know I'm not alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates a relapse of urges, suggesting a potential struggle with mental health or addiction. While not explicitly stating intent, the need for coping mechanisms and a feeling of isolation raise concern.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-04 13:17:02"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Sometimes things get so overwhelming. Feeling like I just need to feel *something* else, even if it hurts. Trying to find healthier ways to cope. Anyone else relate?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "The text expresses overwhelming feelings and a desire for self-soothing, but lacks specific plans or intent for self-harm. It mentions trying to find healthier coping mechanisms, which is a positive sign.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-04 13:16:01"
+  },
+  {
+    "title": "User Story: Violence",
     "content": "Just saw a couple arguing on the street, escalated so fast. He shoved her, I froze. Should I have done something? Feeling sick about it.",
     "url": "https://example.com/synthetic-post",
     "original_query": "synthetic_generation",
@@ -898,105 +998,5 @@
     "reason": "The text describes emotional abuse and a feeling of isolation, which can escalate into more severe mental health issues if not addressed. 'Walking on eggshells' and 'constant put-downs' are indicative of a potentially harmful environment.",
     "detected_category": "abuse",
     "timestamp": "2026-01-04 04:27:52"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "I messed up. Scratched again. Feeling so ashamed and lost. Anyone else been there? Just need to know I'm not alone right now.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses feelings of shame, loss, and a past act of self-harm ('scratched again'). While not explicitly suicidal, the admission of repeated self-harm and feelings of isolation raise concerns about potential escalation.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-04 03:49:44"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. The urge to self-harm is strong. Reached out to a friend, just need someone to listen. It helps.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a strong urge to self-harm, suggesting a potential risk. While the person has reached out for help, the intensity of the urge warrants a 'medium' severity level.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-04 03:48:42"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so lost lately. Like I'm underwater. Reaching out because I don't know what else to do. Anyone else feel this way?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text expresses feelings of being lost and overwhelmed, but lacks explicit mentions of self-harm, suicide, or other dangerous intentions. It appears to be a general cry for help and connection.",
-    "detected_category": "other",
-    "timestamp": "2026-01-04 03:47:41"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been having a rough time lately, urges are back. Trying to remember my coping skills but it's hard. Anyone else relate? Just feeling really alone.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a relapse of urges and difficulty coping, suggesting an elevated risk. The feeling of loneliness further exacerbates the situation.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-04 03:46:39"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. Urges are back. Trying to stay strong and remember why I stopped. Anyone else relate? It's a tough battle.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a relapse in urges, suggesting a potential for self-harm. While the individual expresses a desire to stay strong, the return of urges elevates the risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-04 03:45:38"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "I'm so tired. He says he's sorry, promises it won't happen again, then it does. Is this normal? Feeling so lost. Any advice?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a pattern of repeated harmful behavior ('it happens again') and feelings of being lost, suggesting potential emotional distress and a need for support. While not explicitly stating intent for self-harm or violence, the cyclical nature of the situation and expressed feelings warrant concern.",
-    "detected_category": "abuse",
-    "timestamp": "2026-01-04 03:44:37"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Sometimes things get so overwhelming, I just... need to feel *something* else. It's not a solution, I know. Anyone else relate? Trying to find healthier coping mechanisms.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates overwhelming feelings and a need to feel something else, which could suggest self-harm as a coping mechanism. Although the person acknowledges it's not a solution and is seeking healthier options, the implicit mention of needing to 'feel *something* else' raises concern.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-04 03:43:35"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "---\n\nJust saw someone OD downtown. Scariest thing ever. Narcan saved their life. Learn how to use it, could save someone you know. Seriously.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose suggests a risk of potential harm to others in the area due to drug use. The experience can also be psychologically distressing for the witness, potentially impacting their mental health.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-04 03:42:34"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a guy get shoved on the train. Heart's still racing. Is it just me, or is everyone on edge lately? Makes you scared to even go out.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "While the text describes a violent act (being shoved), it does not indicate serious injury or ongoing threat to the poster or others. The poster expresses fear and anxiety, but there's no indication of immediate danger or intent for further violence.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-04 03:41:33"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so low lately. Everything feels heavy, and I'm not sure how much longer I can keep going. Reaching out to see if anyone else understands. Need to find a glimmer of hope.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses feelings of hopelessness and a desire for help, suggesting potential suicidal ideation, though without explicit plans or intent.",
-    "detected_category": "suicide",
-    "timestamp": "2026-01-04 03:40:31"
   }
 ]
