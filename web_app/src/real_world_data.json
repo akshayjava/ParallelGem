@@ -1,6 +1,106 @@
 [
   {
     "title": "User Story: Overdose",
+    "content": "Saw someone OD downtown today. Scary stuff. Please, if you're struggling, reach out. There are resources. Don't let it get that far.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes an overdose event, indicating a risk of severe health consequences or death. While the text is a report and not a direct threat or expression of intent, the mention of the event and urging for help implies a potential risk to others struggling with similar issues.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-06 04:32:46"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD at the park yesterday. Scariest thing ever. They were okay, thank god, but I keep thinking \"what if?\" Narcan saves lives, people. Learn how to use it. It's free and could help someone you know.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose, even if the person survived, indicates a risk of future overdose events in the area. The \"what if?\" thought suggests potential psychological distress for the witness.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-06 04:31:44"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "\"Been feeling so heavy lately, like I'm underwater. Reaching out because I don't know what else to do. Anyone else feel this way?\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "The text expresses feelings of sadness and being overwhelmed, but does not contain direct threats or plans for self-harm. It appears to be a general call for support.",
+    "detected_category": "other",
+    "timestamp": "2026-01-06 04:30:42"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "**(Option 1: Seeking Help)**\n\n> Been feeling so overwhelmed lately. The urge to hurt myself is back. Reached out to a helpline. Just gotta get through tonight.\n\n**(Option 2: Sharing Experience)**\n\n> Cutting was my way to cope for years. Now I'm in therapy & learning new skills. It's hard, but recovery IS possible.\n\n**(Option 3: Raising Awareness)**\n\n> Scars aren't always attention-seeking. Sometimes they're silent screams. Be kind, you never know what someone's going through.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "Option 1 expresses an active urge to self-harm and indicates immediate risk, requiring urgent support.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-06 04:29:40"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD downtown today. Scary stuff. Narcan saved them, but it made me realize how close to home this is. If you're struggling, please reach out. You're not alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose, even with a positive outcome, indicates a potential risk for increased anxiety, fear, and awareness of vulnerability within the community. While the person survived, the experience highlights the prevalence and potential for future, possibly fatal, overdose events.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-06 04:28:38"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "It's so hard to admit, but things at home have been... not good. Constant yelling, and now he's starting to push. I feel trapped. Anyone know resources to get help discreetly? I'm scared.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text indicates escalating domestic violence with physical aggression (pushing), feelings of being trapped, and fear. This suggests a high risk of further harm and potential for a dangerous situation.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-06 04:27:36"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "It's hard to admit, but things aren't good at home. Constant yelling, controlling behavior... I feel trapped. Has anyone else experienced this? Any advice on getting out?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates a potentially abusive situation with controlling behavior and feelings of being trapped. While it doesn't explicitly mention physical violence, the risk of escalation and emotional distress is present.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-06 04:26:34"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Ugh, feeling so overwhelmed. Relapsed after a few months clean. The shame is awful. Reaching out to my therapist tomorrow. Just needed to say it somewhere.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Relapse after a period of sobriety, combined with feelings of shame, increases vulnerability. While they are reaching out for help, the immediate risk is unclear.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-06 04:25:33"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Seeing too many RIP posts lately. ODs are hitting hard. Lost a friend last week. Please, if you're struggling, reach out. There are people who care and want to help. Don't be afraid to ask.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text expresses concern about a high incidence of overdose deaths (ODs) and mentions the loss of a friend. This indicates a heightened risk of overdose and potential suicidal ideation in the broader context.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-06 04:24:31"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw a guy OD on the street yesterday. Scary stuff. Narcan saved him, thank god. Makes you realize how fragile life is, and how important it is to reach out if you're struggling. There's help out there.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose can be traumatizing and trigger negative emotions or coping mechanisms in the observer. While the person survived due to Narcan, the event points to a potential overdose risk in the community and the fragility of life.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-06 04:23:30"
+  },
+  {
+    "title": "User Story: Overdose",
     "content": "Saw someone OD downtown today. Scared me senseless. Narcan saved them, thank god. Makes you realize how close it is. Please, be careful out there. Know the signs.",
     "url": "https://example.com/synthetic-post",
     "original_query": "synthetic_generation",
@@ -898,105 +998,5 @@
     "reason": "The text references a recent overdose, a near-fatal experience with a family member, and encourages carrying Narcan. This suggests a real and present risk of overdose in the author's environment or social circle, requiring awareness and preventative measures. While the author expresses fear rather than direct intent, the proximity to overdose events raises concern.",
     "detected_category": "overdose",
     "timestamp": "2026-01-05 19:09:54"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Just saw someone OD in front of me. Scariest thing ever. They're okay now thanks to Narcan, but damn. We need to talk about this more. Anyone else feel this way? Feeling shaken.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose is a traumatic event that can have psychological impacts on the individual. The person is 'shaken', indicating distress. While the immediate medical crisis was averted, the poster expresses the need for further discussion and support, implying a potential need for mental health support.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-05 18:23:15"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so lost lately. Like I'm underwater. Reaching out to a friend tonight. Hope it helps. Anyone else ever feel this way?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text expresses feelings of being lost and overwhelmed, but includes a positive coping mechanism (reaching out to a friend). There's no explicit mention of self-harm or suicidal intent, but the language used warrants monitoring.",
-    "detected_category": "other",
-    "timestamp": "2026-01-05 18:22:13"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "**Option 1 (Seeking help):**\n\n> \"Things at home are...rough. Walking on eggshells constantly. Anyone know of resources for verbal abuse?\"\n\n**Option 2 (Sharing a feeling):**\n\n> \"Is it normal to feel so worthless after an argument? Like everything is my fault, even when I didn't start it?\"\n\n**Option 3 (Raising awareness):**\n\n> \"Gaslighting is real. It messes with your head. Don't let anyone tell you your feelings aren't valid.\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text suggests potential verbal abuse and feelings of worthlessness, indicating a potentially harmful situation that could escalate. The mention of 'gaslighting' further points towards manipulation and psychological distress.",
-    "detected_category": "abuse",
-    "timestamp": "2026-01-05 18:21:11"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so low lately. Just reaching out to see if anyone else understands this heavy feeling. Trying to take it one day at a time.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text expresses feelings of sadness and being low, but does not contain any explicit mention or implication of self-harm, suicide, violence, abuse, or overdose. The user is reaching out for support and focusing on coping strategies (taking it one day at a time), which suggests a desire to manage their feelings rather than act on them.",
-    "detected_category": "other",
-    "timestamp": "2026-01-05 18:20:09"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "\"Saw a fight downtown last night. Shook me up bad. Just senseless. Makes you wonder, y'know? Anyone else feel like things are getting more volatile lately?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "Witnessing a fight is unsettling and can cause anxiety, but the text doesn't indicate immediate danger or a direct threat to the author or others.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-05 18:19:06"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "It's hard to admit, but things at home have been...rough lately. Walking on eggshells constantly. Anyone else ever feel like they're losing themselves? I just need to know I'm not alone.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates emotional distress and a potentially volatile home environment (walking on eggshells), suggesting a risk of escalation. While not explicitly mentioning harm, the feeling of losing oneself and seeking validation indicates a need for support and potential vulnerability.",
-    "detected_category": "abuse",
-    "timestamp": "2026-01-05 18:18:05"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. The urge to self-harm is getting strong again. Reached out to a friend, hoping it helps. It's exhausting fighting this.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses a strong urge to self-harm, indicating an elevated risk. While the individual has reached out for help, the intensity of the urge warrants a 'medium' severity assessment.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-05 18:17:03"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so lost lately. Like I'm underwater and can't find the surface. Reaching out because I don't know what else to do. Anyone else feel this way?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses feelings of hopelessness and being overwhelmed, suggesting emotional distress. While it doesn't explicitly mention self-harm or suicide, the metaphor of being underwater and unable to reach the surface indicates a significant level of distress and a need for support.",
-    "detected_category": "suicide",
-    "timestamp": "2026-01-05 18:16:01"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so low lately. Like a dark cloud won't lift. Reaching out because I know I need to. Talking to someone tomorrow. Hope it helps.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses feelings of deep sadness and a desire for help, suggesting a potential risk that warrants attention. While not explicitly suicidal, the phrase \"dark cloud won't lift\" and reaching out for help indicates a need for support that if unmet, could escalate the risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-05 18:14:59"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "\"Been feeling so lost lately. Like I'm underwater. Reaching out in case anyone else knows this feeling. It's heavy.\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text expresses feelings of being lost and overwhelmed, but doesn't contain any explicit threats, plans, or indications of intent to harm self or others.",
-    "detected_category": "other",
-    "timestamp": "2026-01-05 18:13:57"
   }
 ]
