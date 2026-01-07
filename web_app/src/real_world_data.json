@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD at the park today. Scared me to death. Narcan saved their life. Carry it, learn how to use it. You could save someone too.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "While the individual survived, the text describes an overdose, a potentially life-threatening situation. The call to action suggests the event's impact and the possibility of recurrence.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-07 17:21:29"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Heard a loud crash next door. Sounded like shouting before. Should I call someone? I'm worried about them, but don't want to make things worse. Anyone else ever been in this situation?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Possible violence or abuse occurring next door. The crash and shouting suggest a potentially dangerous situation requiring outside intervention.",
+    "detected_category": "violence",
+    "timestamp": "2026-01-07 17:20:27"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "I messed up. Relapsed after 6 months clean. Feeling so ashamed and lost. Reaching out to my therapist tomorrow. Just needed to tell someone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Relapse after a period of recovery can be a trigger for negative emotions and increased vulnerability. Expressing shame and feeling lost indicates potential emotional distress. While the individual is planning to seek help, the current state warrants a 'medium' severity rating.",
+    "detected_category": "other",
+    "timestamp": "2026-01-07 17:19:25"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "**Option 1 (Seeking Help):**\n\n> Things are rough at home. Feels like I'm walking on eggshells constantly. Anyone know where I can find resources for dealing with emotional abuse? Feeling lost.\n\n**Option 2 (Sharing a Realization):**\n\n> Just realized the constant put-downs aren't normal. It's been happening for so long, I thought it was just \"how things are.\" Starting to question everything.\n\n**Option 3 (Raising Awareness):**\n\n> Gaslighting is real, and it messes with your head. Don't let anyone make you doubt your own reality. You deserve better.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "While there are no explicit threats of self-harm or violence, the texts describe emotional abuse and its impact on the individual, indicating a potentially harmful situation that could escalate if unaddressed. The victim is realizing the abuse and feeling lost, which makes them vulnerable.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-07 17:18:23"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so low lately. Everything feels overwhelming. Reaching out because I don't know what else to do. Any advice?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text expresses feelings of being overwhelmed and a lack of coping mechanisms, suggesting distress and a need for support. While not explicitly stating self-harm or suicidal intent, the expression of feeling 'so low' and not knowing what else to do warrants concern.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-07 17:17:21"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Sometimes things get so overwhelming, I just want the pain to stop. Not looking for attention, just wondering if anyone else feels this way? Seriously need to find better coping mechanisms.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text expresses a desire for pain to stop, indicating potential suicidal ideation, although it explicitly states not seeking attention. The mention of needing better coping mechanisms suggests awareness of the problem and a desire to improve, but the overwhelming feelings elevate the risk.",
+    "detected_category": "suicide",
+    "timestamp": "2026-01-07 17:16:19"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "\"Just saw a fight break out on my street. Shook me up. Is there anywhere safe to walk around here anymore? Feeling so unsafe.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "The text expresses feeling unsafe due to witnessing a fight, but doesn't indicate immediate danger or specific threats to the individual or others. It's a general expression of concern and fear.",
+    "detected_category": "violence",
+    "timestamp": "2026-01-07 17:15:17"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so lost lately. Like I'm underwater. Reaching out because I don't know what else to do. Any advice appreciated.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses feelings of being overwhelmed and lost, indicating potential emotional distress and a need for help. While not explicitly suicidal, the language suggests a vulnerable state.",
+    "detected_category": "suicide",
+    "timestamp": "2026-01-07 17:14:15"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Just saw a fight downtown. So scary. Makes you think, you know? Stay safe out there, everyone. Seriously shaken.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "low",
+    "reason": "Witnessing a fight is unsettling and the text expresses fear, but there is no direct indication of imminent danger to the writer or others. The advice to 'stay safe' is general.",
+    "detected_category": "violence",
+    "timestamp": "2026-01-07 17:13:13"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "> \"I keep making excuses for him, but the yelling's getting worse. Last night he... I don't even want to say it. Is this abuse? Feeling so lost.\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text describes escalating yelling and an implied event the speaker is hesitant to describe, suggesting potential physical or severe emotional abuse. The feeling of being lost also indicates significant distress.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-07 17:12:11"
+  },
+  {
     "title": "User Story: Abuse",
     "content": "\"Just realized yelling & control *is* abuse. Always thought it was just 'stress.' Feeling so lost & confused. Anyone else been through this? Where do I even start?\"",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "While the event itself (being shoved) could have resulted in serious injury, the text also expresses concern about lack of bystander intervention and a feeling of vulnerability, hinting at potential escalation or a more serious threat if the situation worsened. The level of concern suggests more than just a minor incident.",
     "detected_category": "violence",
     "timestamp": "2026-01-07 08:12:53"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "\"It's so hard to admit, but things at home have been bad. Constant put-downs, controlling behavior... I feel trapped. Anyone else been through this? How did you find the strength to leave?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text describes controlling behavior and constant put-downs, indicating a potential abusive situation. While not explicitly mentioning physical harm, the feeling of being 'trapped' suggests a significant impact on mental and emotional well-being. The plea for advice on leaving implies an intent to change the situation, but the user is currently vulnerable.",
-    "detected_category": "abuse",
-    "timestamp": "2026-01-07 07:21:51"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. The urge to self-harm is strong. Reached out to a friend, and it helped a little. Remember you're not alone. Talking can make a difference.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "The text explicitly states a strong urge to self-harm, indicating immediate risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-07 07:20:48"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD last night. Scariest thing ever. Narcan saved them. Please, learn the signs and carry it if you can. Could save a life.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose is a serious event and indicates potential risk in the community. While the person survived, the situation highlights the presence of drug use and potential for future overdoses.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-07 07:19:47"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD downtown yesterday. Scary stuff. Glad they're okay now, but it makes you think. If you're struggling, please reach out. There are people who care.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose, even if the person recovered, can be a traumatic experience and highlight the prevalence of drug-related harm in the community. The message also implies that the target audience may be struggling with addiction or mental health issues, increasing the risk of future overdose or related harm.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-07 07:18:45"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a guy shove his partner on the street. Froze. Wish I'd said something. Feeling sick about it. Anyone else ever witness something like that? How do you react?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing violence can be emotionally distressing and could indicate a potential escalation of harm to the victim. While the original poster is not directly involved in the violence, the incident suggests a risk of further violence and potential harm to the individual who was shoved.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-07 07:17:43"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a guy punch his girlfriend outside the grocery store. Froze. Called the cops, but feel sick. Anyone else ever witness something like that? How do you cope?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing violence, especially domestic violence, can be deeply disturbing and have lasting psychological effects. While the immediate physical risk is external, the emotional distress and potential for vicarious trauma elevate the severity.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-07 07:16:42"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so low lately, like nothing matters. Reaching out to a friend, feels hard but gotta try. Anyone else ever feel this way?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses feelings of hopelessness and low mood, which are potential indicators of depression and suicidal ideation. Reaching out is positive, but the underlying feeling of 'nothing matters' requires further assessment.",
-    "detected_category": "suicide",
-    "timestamp": "2026-01-07 07:15:40"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw a friend OD last night. Scariest thing ever. Narcan saved them. Please, if you're using, carry it. It's free and could save a life. Learn how to use it. #staysafe",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "Reports a friend's recent overdose, indicating a life-threatening situation and potential ongoing risk for others in the social circle.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-07 07:14:38"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. Urges are back and stronger. Trying to stay strong and remember why I stopped. It's hard. Anyone else relate? Any tips?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text indicates a return of strong urges, which suggests a potential for relapse or escalation of distress. While the individual is expressing a desire to stay strong, the presence of these urges warrants concern.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-07 07:13:36"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "It's hard to admit, but things at home aren't good. Constant put-downs, walking on eggshells... is this normal? Feeling so lost and alone. Anyone else been through this? Need to figure out what to do next.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text describes emotional abuse and feelings of isolation, suggesting potential for escalation. While not explicitly mentioning harm, the walking on eggshells and put-downs point to a potentially unsafe environment and the expressed feeling of being lost can indicate a deterioration of mental health.",
-    "detected_category": "abuse",
-    "timestamp": "2026-01-07 07:12:35"
   }
 ]
