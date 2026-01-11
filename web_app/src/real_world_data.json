@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Self-Harm",
+    "content": "I messed up. Cleaned the cuts, but feeling so ashamed. Reached out to a friend. Just need to make it through tonight. Anyone else been there?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text mentions self-harm (\"cleaned the cuts\"), indicating a potential ongoing risk. While they have reached out to a friend and express a desire to \"make it through tonight,\" the underlying feelings of shame and the act of self-harm itself warrant a medium severity rating.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-11 13:25:07"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so lost lately. Like I'm underwater. Reaching out to a friend tonight, hoping it helps. It's hard to keep going sometimes.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text expresses feelings of being lost, overwhelmed ('underwater'), and struggling to keep going, suggesting possible depressive symptoms and a sense of hopelessness. Reaching out to a friend indicates an attempt to cope, but the intensity of the negative feelings warrants a 'medium' severity.",
+    "detected_category": "suicide",
+    "timestamp": "2026-01-11 13:24:05"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so lost lately. Everything feels heavy and pointless. Reaching out because I don't know what else to do. Any advice?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses feelings of lostness, heaviness, and pointlessness, indicating potential for depression or suicidal ideation. The user is actively reaching out for help, which is a positive sign, but the depth of negative feelings warrants concern.",
+    "detected_category": "suicide",
+    "timestamp": "2026-01-11 13:23:03"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD downtown today. Scariest thing ever. Glad they're okay now, but seriously folks, be careful out there. It can happen to anyone. Know your limits, and look out for each other.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes an overdose (OD), which can be life-threatening. While the person is now okay, the event indicates a significant risk to individuals using substances.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-11 13:22:02"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "My friend almost didn't wake up yesterday. Scariest moment of my life. Please, if you're struggling, reach out. There are people who care. Don't let it get that far.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text explicitly states the friend 'almost didn't wake up,' suggesting a near-fatal event, possibly related to self-harm or suicide. The phrase 'don't let it get that far' indicates a need for immediate action.",
+    "detected_category": "suicide",
+    "timestamp": "2026-01-11 13:21:00"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Just saw a story about someone OD'ing. Scared me. Happened to a friend last year, thankfully they're okay now. Naloxone saves lives, people. Know the signs.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text discusses a recent overdose and a past overdose of a friend, indicating potential risk of overdose in the user's social circle and expressing fear. The mention of Naloxone and knowing the signs suggests awareness but also concern.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-11 13:19:59"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw someone OD downtown today. Scary stuff. Narcan saved them, thank goodness. Carry it if you can, could save a life. Know the signs.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose indicates a potential public health issue and immediate risk in the described environment. While Narcan was available, future instances might not have the same outcome.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-11 13:18:57"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "---\n\n\"Just saw a guy get jumped outside my building. Shook me up bad. Called 911, but I keep replaying it. Anyone else ever witness something like that? How do you cope?\"",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing a violent crime is a traumatic event that can cause distress and anxiety, potentially leading to psychological harm. While the original poster wasn't physically harmed, the event's impact warrants a medium severity level. Law enforcement notified.",
+    "detected_category": "violence",
+    "timestamp": "2026-01-11 13:17:56"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Ugh, rough day. Feeling that familiar urge to just... hurt. Trying to resist. Anyone else get this? How do you cope? Seriously need some ideas.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses an urge to hurt, indicating potential self-harm or harm to others, though explicitly resisting. The need for coping mechanisms suggests active struggle and potential for escalation.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-11 13:16:54"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. The urge to self-harm is getting stronger. Reached out to a friend, hoping it helps. Just trying to get through this.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The text explicitly mentions a strengthening urge to self-harm, indicating an elevated risk of self-inflicted harm.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-11 13:15:52"
+  },
+  {
     "title": "User Story: Overdose",
     "content": "Seeing the news about the overdoses lately is scary. A friend relapsed last week, thankfully he's okay. Please look out for each other and know naloxone saves lives. Learn the signs.",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "The text indicates a difficult and potentially emotionally abusive home environment, with mentions of yelling, put-downs, and feeling like walking on eggshells. While it doesn't explicitly mention physical violence or suicidal ideation, the description suggests significant emotional distress and potential for escalation.",
     "detected_category": "abuse",
     "timestamp": "2026-01-11 04:27:31"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw my neighbor OD yesterday. Scariest thing ever. Narcan saved him. Please, if you're struggling, reach out. There's help out there. Don't be afraid.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "The text describes a recent overdose incident, which is a life-threatening event. While the neighbor survived due to Narcan, the proximity and recency of the event indicate a potentially heightened risk environment for the person sharing the text, warranting a high severity rating.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-11 03:49:13"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw a guy OD downtown. Scary stuff. Called 911 but still shook. Knowing naloxone saved his life makes me think everyone should carry it. Learn how to use it. Please.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose indicates a serious situation with potential for harm or death. While the individual survived due to naloxone, the event itself and the call for widespread naloxone use suggest an ongoing risk of overdose in the area.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-11 03:48:12"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Just saw a fight downtown. So scary how quickly things escalated. Makes you wonder what sets people off. Anyone else feel on edge lately?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text describes witnessing a fight, which indicates potential violence in the area, but it doesn't directly threaten or involve the author or any specific individual. The overall tone suggests anxiety and unease rather than imminent danger. No specific threat is made, only an observation of a disturbance.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-11 03:47:10"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. Cutting again after 6 months clean. It's like the only way to feel *something*. Reaching out to my therapist tomorrow. Wish me luck.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "Relapse of self-harm after a period of recovery indicates a significant escalation of distress and immediate risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-11 03:46:09"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD last night. Terrifying. Narcan saved them, but it was close. Please, learn the signs and carry it if you can. It's easier than you think to get.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "The text describes a recent overdose event that nearly resulted in death. While Narcan was successful, the situation highlights a significant risk of fatal overdose.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-11 03:45:07"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "My friend almost didn't wake up yesterday. Scariest thing ever. Please, if you're struggling, reach out. Don't let it get that far. There are people who care.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "The text indicates a friend experienced a near-fatal event potentially related to mental health struggles, suggesting a high risk of self-harm or suicide. The urgency in the language ('almost didn't wake up') and the plea for help reinforce the severity.",
-    "detected_category": "suicide",
-    "timestamp": "2026-01-11 03:44:06"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. Urges are back. Reached out to a friend, just needed to say it out loud. It helps, even a little. Taking it one day at a time.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Reports of returning urges indicate increased risk, however, the individual has reached out for support which is a positive coping mechanism. The phrase 'one day at a time' suggests a struggle.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-11 03:43:04"
-  },
-  {
-    "title": "User Story: Overdose",
-    "content": "Saw someone OD last night. Scariest thing ever. Narcan saved them, thank goodness. Please, learn how to use it. It can really make a difference. #OverdoseAwareness #NarcanSaves #GetTrained",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing an overdose indicates a potential safety risk due to the possibility of others being at risk or the witness experiencing trauma. While the person survived, the risk of future overdoses in the same environment remains.",
-    "detected_category": "overdose",
-    "timestamp": "2026-01-11 03:42:03"
-  },
-  {
-    "title": "User Story: Suicide",
-    "content": "Been feeling so lost lately. Like I'm just going through the motions. Reaching out because I don't know what else to do. Is anyone else feeling this way?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text expresses feelings of being lost and going through the motions, indicating a low mood and potential distress. There's no explicit mention of self-harm, suicide, violence, or abuse.",
-    "detected_category": "other",
-    "timestamp": "2026-01-11 03:41:01"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Been feeling so overwhelmed lately. The urge to self-harm is strong. Reached out to a friend, hoping it helps. Just trying to get through tonight.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "high",
-    "reason": "Expresses a strong urge to self-harm and feeling overwhelmed, indicating immediate risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-11 03:40:00"
   }
 ]
