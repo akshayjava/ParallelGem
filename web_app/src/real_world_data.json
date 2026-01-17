@@ -1,5 +1,105 @@
 [
   {
+    "title": "User Story: Violence",
+    "content": "My neighbor's yelling again. Sounds like it's escalating. I'm scared to call, but worried for the kids. Anyone else dealt with this? What did you do?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The situation involves escalating yelling and concern for children, suggesting a potential risk of violence or abuse. The poster is scared, indicating a genuine threat perception.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-17 09:18:15"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so lost lately. Like I'm underwater. Reaching out because I don't know what else to do. Any advice?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "unknown",
+    "reason": "429 Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.",
+    "detected_category": "unknown",
+    "timestamp": "2026-01-17 09:17:13"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so lost lately. Like I'm underwater. Just reaching out...has anyone else felt this way? Need to know I'm not alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Expresses feelings of being lost and overwhelmed, potentially indicating emotional distress and a need for support. The 'reaching out' suggests a desire for connection and help, but the depth of distress is unclear. While not explicitly suicidal, the metaphor of being 'underwater' can be concerning.",
+    "detected_category": "suicide",
+    "timestamp": "2026-01-17 09:16:12"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Heard shouting next door again last night. Sounded like things were getting thrown. Makes me sick to my stomach. Wish I knew what to do. Feel so helpless.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Reports of shouting and objects being thrown next door suggest a potential escalation of violence or abuse. The reporter's feelings of helplessness and sickness indicate significant emotional distress related to the situation.",
+    "detected_category": "violence",
+    "timestamp": "2026-01-17 09:15:11"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Saw a guy OD on the street today. Scary stuff. Narcan saved him, thank goodness. Makes you realize how fragile life is. Anyone know where I can get trained on using it?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "Witnessing an overdose can be psychologically distressing and indicates the presence of immediate and serious health risks (overdose) in the environment. While the person survived due to Narcan, the incident suggests a potential ongoing risk of overdose in the community.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-17 09:14:10"
+  },
+  {
+    "title": "User Story: Overdose",
+    "content": "Just saw a thing about overdoses and it hit hard. Lost a friend last year. Knowing the signs and having Narcan could've made a difference. Learn about it. It matters.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text discusses overdoses and the potential impact of Narcan, indicating a risk of overdose even though it doesn't apply directly to the author. The mention of a lost friend elevates the risk from low to medium because it suggests a personal connection to the issue and potential for vicarious trauma or heightened awareness of risk.",
+    "detected_category": "overdose",
+    "timestamp": "2026-01-17 09:13:08"
+  },
+  {
+    "title": "User Story: Self-Harm",
+    "content": "Been feeling so overwhelmed lately. The urge to hurt myself is getting strong again. Reached out to a friend, hoping it helps. It's exhausting fighting this battle.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "high",
+    "reason": "The individual expresses a strong urge to self-harm, indicating a significant and immediate risk.",
+    "detected_category": "self-harm",
+    "timestamp": "2026-01-17 09:12:06"
+  },
+  {
+    "title": "User Story: Suicide",
+    "content": "Been feeling so heavy lately. Like I'm underwater. Reaching out before things get worse. Anyone else feel this way?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text expresses feelings of being overwhelmed and a desire to reach out before things worsen, suggesting potential for escalation. The 'underwater' metaphor can indicate feelings of suffocation or being trapped, which can be associated with depression and suicidal ideation.",
+    "detected_category": "suicide",
+    "timestamp": "2026-01-17 09:11:05"
+  },
+  {
+    "title": "User Story: Abuse",
+    "content": "Just feeling so lost. Things at home keep escalating, yelling turning into... other things. Don't know where to turn. Anyone else been through this? Feeling so alone.",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text indicates escalating conflict at home, possibly involving violence or abuse. The user expresses feeling lost and alone, suggesting emotional distress and a potential risk of harm.",
+    "detected_category": "abuse",
+    "timestamp": "2026-01-17 09:10:04"
+  },
+  {
+    "title": "User Story: Violence",
+    "content": "Saw a guy shove his girlfriend on the street today. Made me sick. Wish I'd said something, but I froze. Anyone else ever feel that helplessness? What can you even do?",
+    "url": "https://example.com/synthetic-post",
+    "original_query": "synthetic_generation",
+    "severity": "medium",
+    "reason": "The text describes an act of violence (shoving) and expresses feelings of helplessness, which can be precursors to more serious issues or indicate ongoing abuse. While not directly threatening, it points to a potentially dangerous situation.",
+    "detected_category": "violence",
+    "timestamp": "2026-01-17 09:09:02"
+  },
+  {
     "title": "User Story: Overdose",
     "content": "Saw my neighbor being carried out by paramedics. OD. Scared. This addiction stuff is real, y'all. Please reach out if you're struggling. There's help.",
     "url": "https://example.com/synthetic-post",
@@ -898,105 +998,5 @@
     "reason": "Witnessing a violent act (shoving on a subway) suggests a potential risk of further violence or escalation. While the individual who was shoved isn't explicitly described as seriously injured, the act itself constitutes a safety risk. The observer's distress and feeling of helplessness indicate the event had a significant impact.",
     "detected_category": "violence",
     "timestamp": "2026-01-17 00:36:04"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "I saw two guys fighting outside the bar last night. Punches thrown, yelling... Scared me. Is this normal now? Makes me not want to go out anymore.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "While the situation described (a fight) involves violence, the text primarily expresses fear and a reluctance to go out, rather than direct threat or immediate danger to the author or others. The risk of direct harm is low based solely on this text.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-16 23:18:21"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "\"Saw a fight downtown last night. Scary how quickly things escalated. Made me realize how unprepared I am if something like that happened to me. Anyone know of good self-defense classes in the area?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text describes witnessing a fight, indicating a potential risk of violence in the general area, but the user is primarily expressing concern for their own safety and seeking self-defense resources. It doesn't suggest imminent danger or direct threat.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-16 23:17:19"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "I messed up. Clean for 2 weeks, then relapsed. Feeling so ashamed and lost. Anyone else know this cycle? Just need to know I'm not alone.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Relapse after a period of sobriety can be a trigger for negative emotions and potentially lead to unsafe behaviors. The feelings of shame and being lost indicate distress, which requires attention.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-16 23:16:18"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "Saw a fight outside my building last night. Shook me up bad. Makes you realize how quickly things can escalate. Anyone else feel unsafe in their neighborhood lately?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text describes witnessing a fight, which is unsettling but doesn't indicate imminent danger to the author or others. The user expresses feeling unsafe, but this is a general sentiment rather than a specific threat or plan.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-16 23:15:16"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "Sometimes things get so overwhelming I just want to feel *something* else. I know it's not healthy, but it's hard to stop. Anyone else ever feel this way? How do you cope?",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text expresses a desire to feel 'something else' due to feeling overwhelmed, which could indicate potential self-harm or other risky behaviors. While not explicitly stated, the mention of unhealthy coping mechanisms and seeking help suggest a level of distress that warrants concern.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-16 23:14:15"
-  },
-  {
-    "title": "User Story: Self-Harm",
-    "content": "---\n\n\"Rough night. Urges were strong, but I distracted myself. One day at a time, right? Still feels like a battle. Anyone else relate?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text describes strong urges, implying a struggle with a potentially harmful behavior. While the individual reports using distraction, the strength of the urges suggests a moderate level of risk.",
-    "detected_category": "self-harm",
-    "timestamp": "2026-01-16 23:13:14"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "Sometimes I feel so lost. Like I'm walking on eggshells, afraid to say the wrong thing. It's exhausting. Anyone else ever feel trapped in their own relationship? Could really use some support right now.",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "The text expresses feelings of being lost and trapped in a relationship, suggesting emotional distress but no immediate threat to safety. It seeks support rather than indicating self-harm, violence, or suicidal ideation.",
-    "detected_category": "other",
-    "timestamp": "2026-01-16 23:12:12"
-  },
-  {
-    "title": "User Story: Abuse",
-    "content": "\"It's hard to admit, but things aren't good at home. Always walking on eggshells. Is there anyone else who understands this?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "The text suggests a difficult and potentially stressful or harmful home environment, implying potential for escalation. \"Walking on eggshells\" indicates fear and potential for volatile interactions.",
-    "detected_category": "abuse",
-    "timestamp": "2026-01-16 23:11:11"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "\"Just saw a guy get punched outside my building. Shook me up. Called the cops, but still feeling sick. Anyone else ever witness something like that? How do you cope?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "low",
-    "reason": "Witnessing violence is unsettling, but the text doesn't indicate imminent danger to the user or others. The user is shaken but took appropriate action by calling the police.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-16 23:10:09"
-  },
-  {
-    "title": "User Story: Violence",
-    "content": "\"Saw a guy get jumped on my way home. Shook me up bad. Called 911, but still feel sick. How do you even process something like that?\"",
-    "url": "https://example.com/synthetic-post",
-    "original_query": "synthetic_generation",
-    "severity": "medium",
-    "reason": "Witnessing a violent assault can cause significant distress and potential psychological harm. While the individual was not directly targeted, the event was impactful and warrants concern.",
-    "detected_category": "violence",
-    "timestamp": "2026-01-16 23:09:08"
   }
 ]
